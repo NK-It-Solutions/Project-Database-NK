@@ -30,8 +30,35 @@
     </header>
     <section id="login">
         <div id="logindiv" class="container">
-            <img class="img-fluid" src="https://sso.acesso.gov.br/assets/govbr/img/conta_govbr_v2.jpg" alt="">
-        </div>
+            <div id="imagem">
+                <img class="img-fluid" src="https://sso.acesso.gov.br/assets/govbr/img/conta_govbr_v2.jpg" alt="">
+            </div>
+            <main id="main-signin">
+                <form class="mx-lg-4">
+                    <div class="card" id="logincpf">
+                        <h3>Indentifique-se no sistema</h3>
+                        <a id="textocpf1">
+                            <img id="iconcpf" src="https://sso.acesso.gov.br/assets/govbr/img/icons/id-card-solid.png" class="img-fluid">
+                            Número do CPF
+                        </a>
+                        <div>
+                            <p id="textocpf2">Digite seu CPF para <strong>criar</strong> ou <strong>acessar</strong> sua conta</p>
+                            <div id="input1">
+                                <label>CPF</label>
+                                <input id="accountId" placeholder="Digite seu CPF">
+                            </div>
+                            <div id="input2">
+                                <label>Senha</label>
+                                <input id="accountId" placeholder="Digite sua Senha">
+                            </div>
+                        </div>
+                        <div class="button-panel" id="login-button-panel">
+                            <button id="enter-account-id" tabindex="2">Continuar</button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+        </div>     
     </section>
 </body>
 </html>
