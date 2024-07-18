@@ -1,0 +1,81 @@
+
+.container {
+    padding: 70px 0;
+}
+
+#nav-container {
+    height: 70px;
+}
+
+header, .navbar {
+    background-color: #060142;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 6px #00000029;
+    text-align: center;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#NKlogo {
+    margin-top: 7px;
+    margin-left: 10px;
+    width: 105px;
+    height: 37px;
+}
+
+.navbar-brand {
+    padding: 0 ;
+    color: #ffff;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+    transition: 0.6s all;
+}
+
+#navbar-links a {
+    color: #fff;
+}
+
+#navbar-links a:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.6s all;
+}
+
+#navbar-links {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 10px; 
+}
+
+/* Botão acessibilidade */
+
+#acessibilidade {
+    margin-top: 10px;
+}
+
+#contraste {
+    margin-right: 10px;
+}
+
+
+#textocontraste {
+    color: white;
+    margin-left: 10px;
+    margin-right: 32px;
+    font-size: 14.4px;
+}
+
+.fas {
+    color: white;
+    margin-right: 2.88px;
+}

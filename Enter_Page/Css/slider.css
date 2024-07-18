@@ -1,0 +1,7 @@
+.container-fluid {
+    margin-top: 2rem;
+}
+
+.carousel-indicators li::marker{
+    content: none; 
+}
