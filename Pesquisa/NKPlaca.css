@@ -210,27 +210,33 @@ input {
     }
 
     #resultado-container {
-        margin-left: -11rem;
+        padding-left: 15rem;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     #consulta-container {
         width: 300px;
         padding: 15px;
-        height: 60vh;
+        height: 70vh;
     }
 
     .consulta-title {
         font-size: 1.5em;
     }
 
-    .registrados p, form, label, input {
-        font-size: 18px;
+    .registrados p, form, label{
+        font-size: 21px;
     }
 
+    input {
+        font-size: 20px;
+    }
+
+
     #resultado-container {
-        margin-left: -11rem;
+        margin-top: 3.5rem;
+        padding-right: 6rem;
     }
 }
 
@@ -249,8 +255,12 @@ input {
         font-size: 1.2em;
     }
 
-    .registrados p, form, label, input {
+    .registrados p, form, label{
         font-size: 16px;
+    }
+
+    input {
+        font-size: 25px;
     }
 
     .record {

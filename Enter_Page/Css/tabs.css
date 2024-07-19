@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 .container {
     margin-top: 2rem;
 }
@@ -6,10 +7,12 @@
     border: 2px solid blue;
     margin-top: 2rem;
     height: auto;
-    width: 800px;
-    margin-left: 13rem;
+    width: 100%; /* Ajustado para 100% da largura do contêiner pai */
+    max-width: 800px; /* Define a largura máxima */
     margin-bottom: 1rem;
     background-color: #fff;
+    padding: 1rem; /* Adiciona padding para evitar que o conteúdo fique colado às bordas */
+    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
 }
 
 .tab-buttons {
@@ -21,7 +24,7 @@
 .tab-buttons button {
     background-color: #006cb4;
     border: 0;
-    width: 50%;
+    width: 48%; /* Ajusta a largura dos botões para que caibam lado a lado */
     height: 3rem;
     font-size: 18px;
     color: #fff;
@@ -42,14 +45,10 @@
     padding: 1rem;
 }
 
-.content-wrapper {
+.content-wrapper, .content-wrapper-red {
     width: 100%;
+    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
 }
-
-.content-wrapper-red {
-    width: 100%;
-}
-
 
 .content-title {
     display: flex;
@@ -66,8 +65,6 @@
     color: #006cb4;
 }
 
-
-
 .content-wrapper-red .content-title.not-registered {
     color: #972800;
 }
@@ -80,20 +77,13 @@
     margin: 0;
 }
 
-.cards-group {
+.cards-group, .cards-group-red {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
-
-.cards-group-red {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
 
 .cards-box {
     border-radius: 5px;
@@ -102,17 +92,16 @@
     color: #006cb4;
     text-align: center;
     box-shadow: 0 0 5px #888585;
+    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
 }
 
 .cards-box.registered {
     color: #006cb4;
 }
 
-
 .cards-group-red .cards-box.registered {
     color: #972800;
 }
-
 
 .cards-box.not-registered {
     color: #006cb4;
@@ -133,4 +122,52 @@
 
 #cardicon {
     font-size: 45px;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-serv {
+        padding: 0.5rem; 
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+    }
+
+    .tab-buttons button {
+        width: 100%; 
+        margin-bottom: 0.5rem; 
+    }
+
+    .cards-box {
+        width: 100%; 
+        max-width: 200px; 
+        padding: 0.5rem; 
+    }
+
+    #cardicon {
+        font-size: 35px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .tab-buttons button {
+        font-size: 16px; 
+        height: 2.5rem; 
+    }
+
+    .cards-box {
+        width: 100%; 
+        max-width: none; 
+        padding: 0.5rem; 
+    }
+
+    #cardicon {
+        font-size: 30px; 
+    }
 }

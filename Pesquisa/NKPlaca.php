@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css"  href="consulta.css">
+    <link rel="stylesheet" type="text/css" href="NKPlaca.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="imagex/png" href="\Users\Waved\Documents\Projetos\Projeto Banco de dados Detran\Imagens\favicon.ico">
@@ -42,89 +42,65 @@
 </header>
 <div class="background-image">
     <section id="consultaCNH">
-
-
         <div class="container" id="consulta-container">
             <div class="consulta-title">
-                <h2>CONSULTA DE CNH</h2>
+                <h2>CONSULTA DE PLACA</h2>
             </div>
             <div class="registrados active" id="registradosContent">
                 <p>Quem possui veículo já registrado pelo NK pode obter as informações <br> necessárias para manter o veículo regularizado e também para realizar os <br> serviços de Comunicação de Venda ou Transferência de Propriedade.</p>
-                <form method="post" action="consulta.php" id="consultaForm">
-                    <label for="cpf">CPF:</label>
+                <form method="post" action="NKPlaca.php" id="consultaForm">
+                    <label for="cpf">PLACA:</label>
                     <input type="text" id="cpf" name="cpf">
                     <input id="consult" type="submit" value="Consultar">
                 </form> 
             </div>
-
         </div>
-
     </section>
     <section id="resultado-consulta">
-        <div class="container" id="resultado-container">
-            
-        </div>
+        <div class="container" id="resultado-container"></div>
     </section>
-
 </div>
 
+
+
+
+
 <script>
-    function removeRecord(id) {
-        var element = document.getElementById("lembro-" + id);
-        if (element) {
-            element.style.display = "none";
-        }
-        checkRecords();
+function removeRecord(id) {
+    var element = document.getElementById("lembro-" + id);
+    if (element) {
+        element.style.display = "none";
     }
-    
-    function removeAllRecords() {
-        var records = document.querySelectorAll('.record');
-        records.forEach(record => {
-            record.style.display = 'none';
-        });
+    checkRecords();
+}
+
+function removeAllRecords() {
+    var records = document.querySelectorAll('.record');
+    records.forEach(record => {
+        record.style.display = 'none';
+    });
+    document.getElementById('registradosContent').style.display = 'block';
+}
+
+function checkRecords() {
+    var records = document.querySelectorAll('.record');
+    var allHidden = true;
+    records.forEach(record => {
+        if (record.style.display !== 'none') {
+            allHidden = false;
+        }
+    });
+    if (allHidden) {
         document.getElementById('registradosContent').style.display = 'block';
     }
-    
-    function checkRecords() {
-        var records = document.querySelectorAll('.record');
-        var allHidden = true;
-        records.forEach(record => {
-            if (record.style.display !== 'none') {
-                allHidden = false;
-            }
-        });
-        if (allHidden) {
-            document.getElementById('registradosContent').style.display = 'block';
-        }
-    }
-    
-    const tabs = document.querySelectorAll('.consulta-title');
-    const all_content = document.querySelectorAll('.registrados');
-    
-    tabs.forEach((tab, index) => {
-        tab.addEventListener('click', () => {
-            tabs.forEach(tab => { tab.classList.remove('active') });
-            tab.classList.add('active');
-    
-            all_content.forEach(content => { content.classList.remove('active') });
-            all_content[index].classList.add('active');
-    
-            if (tab.textContent === 'REGISTRADOS', 'REGISTER-CONTAINER') {
-                removeAllRecords();
-            }
-        });
-    });
-    
-    document.getElementById('consultaForm').addEventListener('submit', function(event) {
-        // Nenhuma ação aqui, pois o formulário será enviado normalmente
-        // e o PHP processará o pedido
-    });
-    </script>
-    
-    </body>
-    </html>
-    
-    <?php
+}
+
+document.getElementById('consultaForm').addEventListener('submit', function(event) {
+    // Nenhuma ação aqui, pois o formulário será enviado normalmente
+    // e o PHP processará o pedido
+});
+</script>
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost";
     $username = "root"; 
@@ -142,11 +118,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Pega o valor do formulário
     $nome_procurado = $_POST['cpf'];
 
-    $sql = "SELECT * FROM info_veiculo WHERE cpf = '$nome_procurado'"; 
-
-    $result = $conn->query($sql);
-
-    
+    $sql = "SELECT * FROM info_veiculo WHERE placa = ?"; 
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $nome_procurado);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
         // Esconde o conteúdo de registrados usando JavaScript
@@ -159,14 +135,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         while($row = $result->fetch_assoc()) {
             echo '<script>
             var record = \'<div id="lembro-' . $row["id"] . '" class="record">\';
-            record += \'<div class="nome">Nome: ' . $row["nome_veiculo"] . '<br></div>\';
             record += \'<div class="placa">Placa: ' . $row["placa"] . '<br></div>\';
+            record += \'<div class="nome">Nome: ' . $row["nome_veiculo"] . '<br></div>\';
             record += \'<div class="ano_mod">Ano/Modelo: ' . $row["ano_modelo"] . '<br></div>\';
             record += \'<div class="marca">Marca: ' . $row["marca_modelo"] . '<br></div>\';
             record += \'<div class="ano_fab">Ano/Fabricação: ' . $row["ano_fabricacao"] . '<br></div>\';
             record += \'<div class="estado">Estado: ' . $row["estado"] . '<br></div>\';
             record += \'<div class="cor">Cor: ' . $row["cor_predominante"] . '<br></div>\';
-            record += \'<div class="chassi">Chassi: ' . $row["chassi"] . '<br></div>\';
             record += \'<button onclick="removeRecord(' . $row["id"] . ')">Remover</button>\';
             record += \'</div>\';
             document.getElementById("resultado-container").innerHTML += record;
@@ -179,6 +154,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-    
 </body>
 </html>

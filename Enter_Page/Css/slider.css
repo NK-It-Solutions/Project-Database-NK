@@ -5,3 +5,10 @@
 .carousel-indicators li::marker{
     content: none; 
 }
+@media (max-width: 800px) {
+    .container-fluid {
+        margin-top: 12rem;
+        
+    }
+    
+}
