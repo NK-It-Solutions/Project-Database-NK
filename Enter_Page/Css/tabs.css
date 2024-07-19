@@ -7,8 +7,8 @@
     margin-top: 2rem;
     height: auto;
     width: 800px;
-    margin-left: 13rem;
     margin-bottom: 1rem;
+
     background-color: #fff;
 }
 
@@ -85,6 +85,7 @@
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .cards-group-red {
@@ -133,4 +134,9 @@
 
 #cardicon {
     font-size: 45px;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
 }
