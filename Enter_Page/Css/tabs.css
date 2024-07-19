@@ -1,4 +1,4 @@
-/* Estilos Gerais */
+
 .container {
     margin-top: 2rem;
 }
@@ -7,12 +7,12 @@
     border: 2px solid blue;
     margin-top: 2rem;
     height: auto;
-    width: 100%; /* Ajustado para 100% da largura do contêiner pai */
-    max-width: 800px; /* Define a largura máxima */
+    width: 100%; 
+    max-width: 800px; 
     margin-bottom: 1rem;
     background-color: #fff;
-    padding: 1rem; /* Adiciona padding para evitar que o conteúdo fique colado às bordas */
-    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+    padding: 1rem; 
+    box-sizing: border-box;
 }
 
 .tab-buttons {
@@ -24,7 +24,7 @@
 .tab-buttons button {
     background-color: #006cb4;
     border: 0;
-    width: 48%; /* Ajusta a largura dos botões para que caibam lado a lado */
+    width: 48%; 
     height: 3rem;
     font-size: 18px;
     color: #fff;
@@ -47,7 +47,7 @@
 
 .content-wrapper, .content-wrapper-red {
     width: 100%;
-    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+    box-sizing: border-box; 
 }
 
 .content-title {
@@ -92,7 +92,7 @@
     color: #006cb4;
     text-align: center;
     box-shadow: 0 0 5px #888585;
-    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+    box-sizing: border-box; 
 }
 
 .cards-box.registered {

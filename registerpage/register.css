@@ -44,11 +44,13 @@ header, .navbar {
 }
 
 #login {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 #logindiv {
     display: flex;
+    justify-content: center;
+
 }
  
 #main-signin, h3 {
@@ -82,6 +84,36 @@ label {
 }
 
 #input2 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#input3 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#input4 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#input5 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#input6 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#input7 {
     display: flex;
     flex-direction: column;
 }
@@ -132,16 +164,17 @@ label {
 }
 
 .card {
-    border-top: hidden;
-    border-radius: 5%;
+    border-radius: 0%;
+    border: 2px solid #060142;
 }
 
 #logincpf {
     padding: 20px;
+    padding-inline: 40px;
 }
 
 #cadastro {
-    font-size: 10px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -149,6 +182,21 @@ label {
     color: #060142;
     cursor: pointer;
     text-decoration: underline;
+}
+
+
+@media screen and (max-width:991px){
+    .card {
+        border-radius: 5%;
+        border: 1px solid #060142;
+      }      
+}
+
+@media screen and (max-width:575px){
+    .card {
+        border-radius: 0%;
+        border: 1px solid #060142;
+      }      
 }
 
 @media screen and (max-width:992px){
@@ -161,6 +209,12 @@ label {
     #logindiv {
         margin-top: 50px;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width:992px){
+    #logincpf {
+        padding-inline: 20px;
     }
 }
 
@@ -278,6 +332,10 @@ body.dark #iconcpf {
 body.dark #iconcpfblack {
     display: inline;
     margin-right: 10px;
+}
+
+body.dark .card {
+    border: 2px solid orangered;
 }
 
 body.dark #cadastro {

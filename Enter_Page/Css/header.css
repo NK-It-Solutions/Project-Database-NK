@@ -79,3 +79,33 @@ header, .navbar {
     color: white;
     margin-right: 2.88px;
 }
+
+.trilho {
+    cursor: pointer;
+}
+
+.trilho.dark #textocontraste {
+    color: white;
+}
+
+.trilho.dark .fas {
+    color: white;
+}
+
+body.dark {
+    background-color: black;
+}
+
+body.dark .navbar{
+    background-color: black;
+}
+
+body.dark .container-serv   {
+    background-color: black;
+    border-color: orangered;
+}
+
+body.dark .cards-box   {
+    box-shadow: 0 0 5px orangered;
+}
+
