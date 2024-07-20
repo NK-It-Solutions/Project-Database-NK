@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css"  href="consulta.css">
+    <link rel="stylesheet" type="text/css"  href="footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="imagex/png" href="\Users\Waved\Documents\Projetos\Projeto Banco de dados Detran\Imagens\favicon.ico">
@@ -21,7 +22,7 @@
 <header>
     <div class="container" id="nav-container">
         <nav class="navbar navbar-expand-lg fixed-top">
-            <a href="#" class="navbar-brand">
+            <a href="http://localhost/project/Enter_Page/NKindex.php" class="navbar-brand">
                 <img id="NKlogo" src="https://i.ibb.co/pd3Byhr/Simplistic-Logo-Cinza.png" alt="Logo da empresa NK Solutions">
             </a>
 
@@ -67,6 +68,37 @@
     </section>
 
 </div>
+
+
+<footer>
+    <!-- footer site detran-->
+    <div class="background-footer">
+        <div class="logos-footer">
+            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+        </div>
+        <div class="sobre-footer">
+            <p id="Sobre-destaque">Sobre a Nk:</p>
+            <a href="#">Consultoria</a>
+            <a href="#">Serviços Web</a>
+            <a href="#">Banco de dados</a>
+            <a href="#">Aplicações</a>
+        </div>
+        <div class="contatos-footer">
+            <p id="Contatosfooter">Contatos</p>
+            <a href="#">NKsolutions_@outlook.com</a>
+            <a href="#">NKsupport@gmail.com</a>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; NK It Solutions</p>
+        </div>
+    </div>
+</footer>
+
+
+<!--Scripts-->
 
 <script>
     function removeRecord(id) {
