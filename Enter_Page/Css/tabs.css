@@ -1,0 +1,174 @@
+
+.container {
+    margin-top: 2rem;
+}
+
+.container-serv {
+    border: 2px solid blue;
+    margin-top: 2rem;
+    height: auto;
+    width: 100%; 
+    max-width: 800px; 
+    margin-bottom: 1rem;
+
+    background-color: #fff;
+    padding: 1rem; 
+    box-sizing: border-box;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.tab-buttons button {
+    background-color: #006cb4;
+    border: 0;
+    width: 48%; 
+    height: 3rem;
+    font-size: 18px;
+    color: #fff;
+}
+
+#hab-btn {
+    background-color: #972800;
+}
+
+.content {
+    display: none;
+}
+
+.content.show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.content-wrapper, .content-wrapper-red {
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.content-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.content-wrapper .content-title.not-registered {
+    color: #006cb4;
+}
+
+.content-wrapper .content-title.registered {
+    color: #006cb4;
+}
+
+.content-wrapper-red .content-title.not-registered {
+    color: #972800;
+}
+
+.content-wrapper-red .content-title.registered {
+    color: #972800;
+}
+
+.content-title h3 {
+    margin: 0;
+}
+
+.cards-group, .cards-group-red {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.cards-box {
+    border-radius: 5px;
+    padding: 1rem;
+    width: 150px;
+    color: #006cb4;
+    text-align: center;
+    box-shadow: 0 0 5px #888585;
+    box-sizing: border-box; 
+}
+
+.cards-box.registered {
+    color: #006cb4;
+}
+
+.cards-group-red .cards-box.registered {
+    color: #972800;
+}
+
+.cards-box.not-registered {
+    color: #006cb4;
+}
+
+.cards-group-red .cards-box.not-registered {
+    color: #972800;
+}
+
+.cards-box:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.cards-box p {
+    text-align: center;
+}
+
+#cardicon {
+    font-size: 45px;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-serv {
+        padding: 0.5rem; 
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+    }
+
+    .tab-buttons button {
+        width: 100%; 
+        margin-bottom: 0.5rem; 
+    }
+
+    .cards-box {
+        width: 100%; 
+        max-width: 200px; 
+        padding: 0.5rem; 
+    }
+
+    #cardicon {
+        font-size: 35px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .tab-buttons button {
+        font-size: 16px; 
+        height: 2.5rem; 
+    }
+
+    .cards-box {
+        width: 100%; 
+        max-width: none; 
+        padding: 0.5rem; 
+    }
+
+    #cardicon {
+        font-size: 30px; 
+    }
+}
