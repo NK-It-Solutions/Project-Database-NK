@@ -3,12 +3,18 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     margin: 25px auto;
+    
 }
 
 .cards-news .news-card {
     width: 100%;
     position: relative;
-}
+    border-radius: 5px;
+    border-left: 2px solid #006cb4;
+    border-right: 2px solid #006cb4;
+    border-bottom: 2px solid #006cb4;
+    
+}    
 
 .image-section img {
     border-radius: 5px;
@@ -35,6 +41,11 @@
     display: inline-block;
     background-color: #006cb4;
     padding: 8px 15px;
+}
+
+.content-news a:hover {
+    transform: scale(1.1);
+    transition: 0.8s; 
 }
 
 .news-card .posted-date {
