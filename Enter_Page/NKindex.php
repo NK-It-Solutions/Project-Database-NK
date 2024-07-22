@@ -234,6 +234,7 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 <!--Fim da Section de notícias--> 
 
 <section id="fique-atento">
@@ -242,6 +243,9 @@
 
 
 </section>
+=======
+
+>>>>>>> e28af2b29ed86481fb9bef6094bc9a186299a2c1
 
 
 
