@@ -1,0 +1,107 @@
+.trilho.dark #textocontraste {
+    color: white;
+}
+
+.trilho.dark .fas {
+    color: white;
+}
+
+body.dark {
+    background-color: black;
+}
+
+body.dark .navbar{
+    background-color: black;
+}
+
+body.dark .container-serv   {
+    background-color: black;
+    border-color: orangered;
+}
+
+body.dark .cards-box   {
+    box-shadow: 0 0 5px orangered;
+}
+
+body.dark #navbar-links a{
+    color: orangered;
+} 
+
+body.dark .title-news {
+    color: orangered;
+}
+
+body.dark .cards-news .news-card {
+    border-left: 2px solid orangered;
+    border-right: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+}
+
+body.dark .image-section img {
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+}
+
+body.dark .content-news h4 {
+    color: orangered;
+}
+
+body.dark .content-news a {
+    background-color: orangered;
+}
+
+body.dark .title-alerts h2 {
+    color: orangered;
+}
+
+body.dark .card-body {
+    background-color: black;
+}
+
+body.dark .card-body h3 {
+    color: orangered;
+}
+
+body.dark .card-body li {
+    color: orangered;
+}
+
+body.dark .card {
+    box-shadow: 0 4px 8px orangered;
+}
+
+body.dark .background-footer {
+    background-color: rgb(15, 14, 14);
+}
+
+body.dark .logos-footer a{
+    color: orangered;
+}
+
+body.dark .sobre-footer a {
+    color: orangered;
+}
+
+body.dark .sobre-footer #Sobre-destaque {
+    color: rgb(255, 152, 114);
+}
+
+body.dark .contatos-footer a {
+    color: orangered;
+}
+
+body.dark .contatos-footer #Contatosfooter {
+    color: rgb(255, 152, 114);
+}
+
+body.dark .copyright {
+    color: rgb(255, 152, 114);
+}
+
+body.dark #NKlogo {
+    display: none;
+}
+
+body.dark #NKlogo-dark {
+    display: block;
+}

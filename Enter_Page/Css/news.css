@@ -2,29 +2,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    margin: 25px auto;
-<<<<<<< HEAD
-    
-=======
->>>>>>> e28af2b29ed86481fb9bef6094bc9a186299a2c1
+    margin: 25px auto;   
 }
 
 .cards-news .news-card {
     width: 100%;
     position: relative;
     border-radius: 5px;
-<<<<<<< HEAD
     border-left: 2px solid #006cb4;
     border-right: 2px solid #006cb4;
     border-bottom: 2px solid #006cb4;
     
 }    
-=======
-    border-right: 2px solid #006cb4;
-    border-left: 2px solid #006cb4;
-    border-bottom: 2px solid #006cb4;
-}
->>>>>>> e28af2b29ed86481fb9bef6094bc9a186299a2c1
 
 .image-section img {
     border-radius: 5px;
@@ -51,20 +40,11 @@
     display: inline-block;
     background-color: #006cb4;
     padding: 8px 15px;
-<<<<<<< HEAD
 }
 
 .content-news a:hover {
     transform: scale(1.1);
     transition: 0.8s; 
-=======
-    
-}
-
-.content-news a:hover{
-    transform: scale(1.1);
-    transition: 0.6s;
->>>>>>> e28af2b29ed86481fb9bef6094bc9a186299a2c1
 }
 
 .news-card .posted-date {

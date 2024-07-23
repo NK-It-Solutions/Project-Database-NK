@@ -9,10 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="Css/Imports.css">
+    <link rel="stylesheet" href="Css/Imports.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" type="imagex/png" href="\Users\Waved\Documents\Projetos\Projeto Banco de dados Detran\Imagens\favicon.ico">
+    <link rel="shortcut icon" type="imagex/png" href="\xampp\htdocs\Project\Imagens\favicon.ico">
 </head>
 <body>
 
@@ -25,6 +25,11 @@
                 <img id="NKlogo" src="https://i.ibb.co/pd3Byhr/Simplistic-Logo-Cinza.png" alt="Logo da empresa NK Solutions">
             </a>
 
+            <a href="#" class="navbar-brand" id="logo-dark">
+                <img id="NKlogo-dark" src="https://i.ibb.co/CsrNTFX/Simplistic-Logo.png" alt="Logo da empresa NK Solutions Modo Dark">
+            </a>
+
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>             
@@ -32,9 +37,9 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbar-links">
                 <div class="navbar-nav" id="navbar-itens">
                     <a href="#Noticias" class="nav-item nav-link" id="news-menu">Noticias</a>
-                    <a href="#" class="nav-item nav-link" id="alert-menu">Sempre alerta</a>
+                    <a href="#fique-atento" class="nav-item nav-link" id="alert-menu">Fique Atento</a>
                     <a href="#" class="nav-item nav-link" id="faq-menu">Dúvidas frequentes</a>
-                    <a href="#" class="nav-item nav-link" id="contact-menu">Contatos</a>
+                    <a href="#Contatos" class="nav-item nav-link" id="contact-menu">Contatos</a>
                 </div>
             </div>
             <div class="trilho" id="trilho">
@@ -233,24 +238,93 @@
             </div>
         </div>
     </div>
+</div><!--Fim da Section de notícias--> 
+
+
+<!--Section de Fique Atento-->
+
+<div class="title-alerts">
+    <h2>FIQUE ATENTO</h2>
 </div>
-<<<<<<< HEAD
-<!--Fim da Section de notícias--> 
-
 <section id="fique-atento">
-
-
-
-
+    <a href="https://www.detran.pe.gov.br/sempre-alerta-detran/cursos" class="card green">
+        <div class="card-header">
+            <i class="bi bi-display-fill"></i>
+            <span>Cursos</span>
+        </div>
+        <img src="https://www.detran.pe.gov.br/images/img-alert-03.png" alt="Fiscalização Image">
+        <div class="card-body" id="body-green">
+            <h3>Conheça a área de Cursos</h3>
+            <ul>
+                <li>Pilotagem defensiva</li>
+                <li>Mecânica básica para iniciantes</li>
+                <li>Reciclagem para condutores Infratores</li>
+                <li>Curso preventivo de reciclagem</li>
+                <li>Cursos para atividades remuneradas</li>
+                
+            </ul>
+        </div>
+    </a>
+    
+    <a href="https://www.detran.pe.gov.br/sempre-alerta-detran/fiscalizacao" class="card yellow">
+        <div class="card-header">
+            <i class="bi bi-shield-shaded"></i>
+            <span>Fiscalização</span>
+        </div>
+        <img src="https://www.detran.pe.gov.br/images/img-alert-02.png" alt="Fiscalização Image">
+        <div class="card-body" id="body-yellow">
+            <h3>Conheça a área de Fiscalização</h3>
+            <ul>
+                <li>Defesa/Recurso</li>
+                <li>Identificação de condutor Infrator</li>
+                <li>Veículos Recolhidos</li>
+                <li>Liberação de Documentos Recolhidos</li>
+                <li>Leilões</li>
+                <li>CNH Suspensa ou Cassada</li>
+            </ul>
+        </div>
+    </a>
 </section>
-=======
+<!--Fim da Section de Fique atento-->
 
->>>>>>> e28af2b29ed86481fb9bef6094bc9a186299a2c1
-
-
-
+<!--Footer-->
+<section id="Contatos">
+    <footer>
+        <div class="background-footer">
+            <div class="logos-footer">
+                <a href="https://www.instagram.com/fotografia.cauaamaral/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/leandro-melo-4656032b6/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/NK-It-Solutions" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+            <div class="sobre-footer">
+                <p id="Sobre-destaque">Sobre a NK Solutions:</p>
+                <a href="https://chat.whatsapp.com/InKndskXwFOL21TIdmgiwo">Consultoria</a>
+                <a href="https://chat.whatsapp.com/InKndskXwFOL21TIdmgiwo">Serviços Web</a>
+                <a href="https://chat.whatsapp.com/InKndskXwFOL21TIdmgiwo">Banco de dados</a>
+                <a href="https://chat.whatsapp.com/InKndskXwFOL21TIdmgiwo">Aplicações</a>
+            </div>
+            <div class="contatos-footer">
+                <p id="Contatosfooter">Contatos</p>
+                <a href="mailto:contatoNKSolutions@gmail.com" target="_blank" class="footercontatos" id="email">
+                        <i class="fa fa-envelope" style="font-size: 1.3em;"></i> <span id="emailcontato"> NKsolutions_@outlook.com</span></a>
+                    <a href="https://chat.whatsapp.com/Bsa2g0ijhYR3rgc9xbQop3" target="_blank" class="footercontatos" id="whatsappcontato">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1.3em;"></i> <span id="wpptexto">+55 81 99646-4232</span> </a>
+                    <a class="footercontatosNB" id="telefone">
+                        <i class="fa fa-phone" style="font-size: 1.3em;"></i> <span id="telefonecontato">+55 81 3251-2381</span></a>
+                    <a href="mailto:HelpNKSolutions@gmail.com" target="_blank" class="footercontatos" id="ajudamobile">
+                        <i class="fa fa-envelope" style="font-size: 1.3em;"></i> <span id="ajudamobilecontato">HelpNKSolutions@gmail.com</span></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; NK Solutions</p>
+            </div>
+        </div>
+    </footer>
 </section>
+
+<!--Fim do footer-->
 
 <script src="JS/scripts.js"></script> <!--Arquivo do JS-->
+
 </body>
 </html>
