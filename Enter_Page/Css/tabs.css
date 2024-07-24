@@ -3,6 +3,10 @@
     margin-top: 2rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container-serv {
     border: 2px solid blue;
     margin-top: 2rem;
@@ -104,11 +108,24 @@
     color: #972800;
 }
 
+.cards-group-red .cards-box.registered a {
+    color: #972800;
+}
+
 .cards-box.not-registered {
     color: #006cb4;
 }
 
+.cards-box.not-registered a {
+    color: #006cb4;
+}
+
+
 .cards-group-red .cards-box.not-registered {
+    color: #972800;
+}
+
+.cards-group-red .cards-box.not-registered a {
     color: #972800;
 }
 

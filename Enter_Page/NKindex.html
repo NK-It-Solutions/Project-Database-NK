@@ -38,8 +38,7 @@
                 <div class="navbar-nav" id="navbar-itens">
                     <a href="#Noticias" class="nav-item nav-link" id="news-menu">Noticias</a>
                     <a href="#fique-atento" class="nav-item nav-link" id="alert-menu">Fique Atento</a>
-                    <a href="#" class="nav-item nav-link" id="faq-menu">Dúvidas frequentes</a>
-                    <a href="#Contatos" class="nav-item nav-link" id="contact-menu">Contatos</a>
+                    <a href="file:///C:/xampp/htdocs/Project/FAQ/faq.html" class="nav-item nav-link" id="faq-menu">Dúvidas frequentes</a>
                 </div>
             </div>
             <div class="trilho" id="trilho">
@@ -66,18 +65,18 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="https://www.detran.pe.gov.br/golpe-no-pagamento-do-ipva-e-outros-tributos-relativos-ao-veiculo" target="_blank"> <img src="https://www.detran.pe.gov.br/images/2024/banner-principal/golpe-pagamentos-online-min.png#joomlaImage://local-images/2024/banner-principal/golpe-pagamentos-online-min.png?width=1140&height=300" class="d-block w-100" alt="Imagem 0 do Slider"></a>
+                    <a href="file:///C:/xampp/htdocs/Project/SempreAlerta/golpeipva/golpeipva.html" target="_blank"> <img src="https://www.detran.pe.gov.br/images/2024/banner-principal/golpe-pagamentos-online-min.png#joomlaImage://local-images/2024/banner-principal/golpe-pagamentos-online-min.png?width=1140&height=300" class="d-block w-100" alt="Imagem 0 do Slider"></a>
                 </div>
             
 
             
                 <div class="carousel-item">
-                    <a href="https://www.detran.pe.gov.br/cnh-rural" target="_blank"> <img src="https://www.detran.pe.gov.br/images/2024/banner-principal/cnh-rural-2024-resultado-min.png#joomlaImage://local-images/2024/banner-principal/cnh-rural-2024-resultado-min.png?width=1140&height=300" class="d-block w-100" alt="Imagem 1 do Slider"></a>
+                    <a href="file:///C:/xampp/htdocs/Project/SempreAlerta/cnhrural/cnhrural.html" target="_blank"> <img src="https://i.ibb.co/8gjPgCq/cnh-rural-2024-resultado-min-cleanup.png" class="d-block w-100" alt="Imagem 1 do Slider"></a>
                 </div>
             
 
                 <div class="carousel-item">
-                    <a href="https://www.detran.pe.gov.br/?view=article&id=2105:novo-servico-impressao-de-atpv-online&catid=30" target="_blank"> <img src="https://www.detran.pe.gov.br/images/2024/banner-principal/atpve-novoServico1.png#joomlaImage://local-images/2024/banner-principal/atpve-novoServico1.png?width=1140&height=300" class="d-block w-100" alt="Imagem 2 do Slider"></a>
+                    <a href="file:///C:/xampp/htdocs/Project/SempreAlerta/ATPV/ATPV.html" target="_blank"> <img src="https://www.detran.pe.gov.br/images/2024/banner-principal/atpve-novoServico1.png#joomlaImage://local-images/2024/banner-principal/atpve-novoServico1.png?width=1140&height=300" class="d-block w-100" alt="Imagem 2 do Slider"></a>
                 </div>
             
             </div>
@@ -111,34 +110,31 @@
             <div class="content-wrapper">
                 <div class="content-title registered">
                     <h3>REGISTRADO</h3>
-                    <p>(VEÍCULO USADO, JÁ EMPLACADO)</p>
+                    <p>(USUÁRIO COM VEÍCULO CADASTRADO)</p>
                 </div>
                 <div class="cards-group">
                     <div class="cards-box registered">
                         <i id="cardicon" class="bi bi-person-vcard-fill"></i>
                         <p>IPVA</p>
                     </div>
-                    <div class="cards-box registered">
-                        <a href="http://localhost/project/pesquisa/consulta.php">
-                        <i id="cardicon" class="bi bi-credit-card-fill"></i>
-                        <p>Consulta de CNH</p> </a>
-                    </div>
-                    <div class="cards-box registered">
-                        <a href="http://localhost/project/pesquisa/NKPlaca.php">
-                        <i id="cardicon" class="bi bi-search"></i>
-                        <p>Consulta de Placa</p> </a>
-                    </div>
+                    
                 </div>
             </div>
             <div class="content-wrapper">
                 <div class="content-title not-registered">
                     <h3>NÃO REGISTRADO</h3>
-                    <p>(VEÍCULO NOVO, NÃO EMPLACADO)</p>
+                    <p>(USUÁRIO NÃO REGISTRADO)</p>
                 </div>
                 <div class="cards-group">
                     <div class="cards-box not-registered">
+                        <a href="http://localhost/project/registerpage/register.php">
                         <i id="cardicon" class="bi bi-car-front-fill"></i> 
-                        <p>Primeiro Registro</p>
+                        <p>Primeiro Registro</p> </a>
+                    </div>
+                    <div class="cards-box not-registered">
+                        <a href="http://localhost/project/pesquisa/consultaPLACA/NKPlaca.php">
+                            <i id="cardicon" class="bi bi-search"></i>
+                            <p>Consulta de Placa</p> </a>
                     </div>
                 </div>
             </div>
@@ -151,17 +147,11 @@
                 </div>
                 <div class="cards-group-red">
                     <div class="cards-box registered">
-                        <i id="cardicon" class="bi bi-card-checklist"></i>  
-                        <p>Pontos na carteira</p> 
+                        <a href="http://localhost/project/pesquisa/consultaCNH/consulta.php">
+                            <i id="cardicon" class="bi bi-credit-card-fill"></i>
+                            <p>Consulta de CNH</p> </a>
                     </div> 
-                    <div class="cards-box registered">
-                        <i id="cardicon" class="bi bi-calendar-week-fill"></i>
-                        <p>Vencimento da carteira</p>
-                    </div>
-                    <div class="cards-box registered">
-                        <i id="cardicon" class="bi bi-ban"></i>
-                        <p>Infrações</p>
-                    </div>
+                   
                 </div>
             </div>
             <div class="content-wrapper-red">
@@ -171,8 +161,9 @@
                 </div>
                 <div class="cards-group-red">
                     <div class="cards-box not-registered">
+                        <a href="http://localhost/project/registerpage/register.php">
                         <i id="cardicon" class="bi bi-sign-stop-lights-fill"></i>
-                        <p>Primeiro Registro</p>
+                        <p>Primeiro Registro</p> </a>
                     </div>
                 </div>
             </div>
@@ -199,7 +190,7 @@
                         </a>    
                 </div>
                 <div class="content-news">
-                    <h4>Detran comprova que pão de forma resulta em teste de bafômetro positivo</h4>
+                    <h4>NK comprova que pão de forma resulta em teste de bafômetro positivo</h4>
                     <a href="https://www.correiobraziliense.com.br/brasil/2024/07/6900908-detran-comprova-que-pao-de-forma-resulta-em-teste-de-bafometro-positivo.html" target="_blank">Leia mais</a>
                 </div>
                 <div class="posted-date">
@@ -229,7 +220,7 @@
                         </a>    
                 </div>
                 <div class="content-news">
-                    <h4>Quer modificar o veículo? CTB prevê que customizações sejam autorizadas pelo Detran</h4>
+                    <h4>Quer modificar o veículo? CTB prevê que customizações sejam autorizadas pela NK</h4>
                     <a href="https://agenciadenoticias.ms.gov.br/quer-modificar-o-veiculo-ctb-preve-que-customizacoes-sejam-autorizadas-pelo-detran/" target="_blank">Leia mais</a>
                 </div>
                 <div class="posted-date">
@@ -238,7 +229,8 @@
             </div>
         </div>
     </div>
-</div><!--Fim da Section de notícias--> 
+</div>
+</section><!--Fim da Section de notícias--> 
 
 
 <!--Section de Fique Atento-->

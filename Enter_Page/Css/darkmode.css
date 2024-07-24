@@ -105,3 +105,13 @@ body.dark #NKlogo {
 body.dark #NKlogo-dark {
     display: block;
 }
+
+body.dark .title-alerts h2{
+    border-bottom: 2px solid orangered;
+    border-left: 2px solid orangered;
+}
+
+body.dark .title-news  {
+    border-bottom: 2px solid orangered;
+    border-left: 2px solid orangered;
+}

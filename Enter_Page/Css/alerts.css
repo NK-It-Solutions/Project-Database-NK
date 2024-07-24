@@ -7,7 +7,13 @@
 }
 
 .title-alerts h2 {
-    padding-left: 2.5rem;
+    margin-left: 2.5rem;
+    color: #006cb4;
+    border-radius: 6px;
+    border-bottom: 2px solid #006cb4;
+    border-left: 2px solid #006cb4;
+    width: 240px;
+    padding: 5px;
 }
 
 
@@ -97,6 +103,12 @@
 
     .card ul li {
         margin: 3px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .title-alerts {
+        margin-left: -2.5rem;
     }
 }
 

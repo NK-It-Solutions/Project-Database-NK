@@ -1,3 +1,14 @@
+.title-news {
+    color: #006cb4;
+    border-radius: 6px;
+    border-bottom: 2px solid #006cb4;
+    border-left: 2px solid #006cb4;
+    width: 180px;
+    padding: 5px;
+}
+
+
+
 .cards-news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
