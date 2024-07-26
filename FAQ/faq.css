@@ -103,8 +103,13 @@ header, .navbar {
     font-size: 60px;
 }
 /*Tópicos*/
-#accordionFlushExample {
+.accordion.accordion-flush {
     margin-top: 3rem;
+}
+
+#title-faq {
+    padding-left: 5px;
+    color: #006cb4;
 }
 
 /*contatos*/

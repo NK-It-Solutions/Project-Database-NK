@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $estado = $_POST["estado"];
     $cep = $_POST["cep"];
-    $senha = $_POST["senha"];
+    $senha = password_hash($_POST['senha'], PASSWORD_BCRYPT);
 
     $sql = "INSERT INTO conta (Nome, CPF, Telefone, Email, Estado, CEP, Senha) 
             VALUES ('$nome', '$cpf', '$telefone', '$email','$estado', '$cep', '$senha')";
