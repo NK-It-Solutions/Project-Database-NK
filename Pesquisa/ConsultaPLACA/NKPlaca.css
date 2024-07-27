@@ -156,8 +156,8 @@ header, .navbar {
     border-radius: 30px;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    height: 50vh;
-    margin: 0 15px;
+    height: 45vh;
+    margin: 0px 0px 0px 0px;
 }
 
 #consulta-container p {
@@ -307,7 +307,7 @@ input {
     #consulta-container {
         width: 300px;
         padding: 15px;
-        height: 70vh;
+        height: 55vh;
     }
 
     .consulta-title {
@@ -329,6 +329,41 @@ input {
     }
 }
 
+@media (max-height: 820px) {
+    #consulta-container {
+        width: 300px;
+        padding: 15px;
+        height: 65vh;
+        width: 50vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    #consulta-container {
+        width: 300px;
+        padding: 15px;
+        height: 90vh;
+        width: 60vh;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 800px) {
+    #consulta-container {
+        width: 300px;
+        padding: 15px;
+        height: 60vh;
+        width: 60vh;
+    }
+}
+
+@media (min-width: 1440px) and (min-height: 800px) {
+    #consulta-container {
+        width: 300px;
+        padding: 15px;
+        height: 60vh;
+        width: 60vh;
+    }
+}
 
 @media (max-width: 576px) {
     #NKlogo {

@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 /* Estilos Gerais */
 body, html {
     height: 100%;
-    font-family: "Poppins" , sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,52 +25,24 @@ body, html {
 
 header, .navbar {
     background-color: #060142;
+    height: 10vh;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 3px 6px #00000029;
-    text-align: center;
 }
 
-#NKlogo {
-    margin-top: 7px;
-    margin-left: 10px;
-    width: 105px;
-    height: 37px;
+.btn {
+    border: 1px solid white;
 }
 
-.navbar-brand {
-    padding: 0;
-    color: #ffff;
+.trilho {
+    cursor: pointer;
 }
 
-.navbar-brand:hover {
-    transform: scale(1.05);
-    transition: 0.6s all;
-}
-
-#navbar-links a {
-    color: #fff;
-}
-
-#navbar-links a:hover {
-    background-color: #fff;
-    color: black;
-    transition: 0.6s all;
-}
-
-#navbar-links {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.nav-item {
-    margin: 0 10px;
-}
-
-/* Botão de acessibilidade */
-#acessibilidade {
-    margin-top: 10px;
+.logo {
+    margin-left: 32px;
 }
 
 #contraste {
@@ -86,6 +59,76 @@ header, .navbar {
 .fas {
     color: white;
     margin-right: 2.88px;
+}
+
+#textobugadodokrlvsf {
+    color: black;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#others-title {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+/* dark-mode*/
+
+.trilho.dark #textocontraste {
+    color: white;
+}
+
+.trilho.dark .fas {
+    color: white;
+}
+
+body.dark {
+    background-color: black;
+}
+
+body.dark .navbar{
+    background-color: black;
+}
+
+body.dark .my-5 {
+    color: white;
+    background-color: black;
+}
+
+body.dark #others-title {
+    color: orangered;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+body.dark span {
+    color: orangered;
+}
+
+body.dark #golpe-title {
+    color: orangered;
+}
+
+body.dark main {
+    background-color: black;
+}
+
+body.dark #others {
+    background-color: black;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+body.dark #textobugadodokrlvsf {
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+body.dark .background-faq {
+    border-top : 5px solid orangered;
+    border-bottom : 5px solid orangered;
 }
 
 /*background*/
@@ -137,7 +180,6 @@ span {
 
 
 /*footer*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 * {
     margin: 0;
@@ -186,6 +228,30 @@ span {
 .logos-footer i {
     font-size: 24px;
     margin: 5px 0;
+}
+
+body.dark .background-footer {
+    background-color: rgb(0, 0, 0);
+}
+
+body.dark .logos-footer-color {
+    color: orangered;
+}
+
+body.dark #Sobre-destaque {
+    color: orangered;
+}
+
+body.dark #Contatosfooter {
+    color: orangered;
+}
+
+body.dark .copyright {
+    color: orangered;
+}
+
+body.dark .sobre-footer-color {
+    color: white;
 }
 
 .copyright {
@@ -244,3 +310,16 @@ span {
     }
 }
 
+@media screen and (max-width:992px){
+    #textocontraste {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:992px){
+    .fas {
+        margin-right: 30px;
+    }
+    
+}
