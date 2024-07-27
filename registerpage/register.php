@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="register.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" type="imagex/png" href="/Portifolio%20NKroo%20Projeto/NKroo%20Imagens/favicon.ico">
+    <link rel="shortcut icon" type="imagex/png" href="/xampp/htdocs/Project-Database-NK/Imagens/favicon.ico">
     <script defer src="register.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Registro</title>
@@ -18,7 +18,7 @@
     <header>
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="/Project-Database/Enter_Page/NKindex.php" class="logo">
+                <a href="/Project-Database-NK/Enter_Page/NKindex.html" class="logo">
                     <img src="https://i.ibb.co/pd3Byhr/Simplistic-Logo-Cinza.png" width="130px" height="45px" alt="Logo NK Solutions">
                 </a>
                 <div class="trilho" id="trilho">
@@ -75,7 +75,7 @@
                             <button type="submit" name="submit" class="btn btn-primary" id="enter-account-id" tabindex="2">Continuar</button>
                         </div>
                         <div id="cadastro">
-                            <p>Já possui conta no sistema? <a href="/Project-Database/loginpage/login.html" id="botaocadastro">Entre</a></p>
+                            <p>Já possui conta no sistema? <a href="/Project-Database-NK/loginpage/login.php" id="botaocadastro">Entre</a></p>
                         </div>
                     </div>
                 </form>

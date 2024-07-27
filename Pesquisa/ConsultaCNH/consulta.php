@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css"  href="consulta.css">
     <link rel="stylesheet" type="text/css"  href="footer.css">
+    <script defer src="consulta.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="imagex/png" href="\Users\Waved\Documents\Projetos\Projeto Banco de dados Detran\Imagens\favicon.ico">
@@ -22,20 +23,12 @@
 <header>
     <div class="container" id="nav-container">
         <nav class="navbar navbar-expand-lg fixed-top">
-            <a href="http://localhost/project/Enter_Page/NKindex.php" class="navbar-brand">
-                <img id="NKlogo" src="https://i.ibb.co/pd3Byhr/Simplistic-Logo-Cinza.png" alt="Logo da empresa NK Solutions">
+            <a href="/Project-Database/Enter_Page/NKindex.html" class="logo">
+                <img src="https://i.ibb.co/pd3Byhr/Simplistic-Logo-Cinza.png" width="130px" height="45px" alt="Logo NK Solutions">
             </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>             
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbar-links">
-              
-            </div>
-            <div id="acessibilidade">
+            <div class="trilho" id="trilho">
                 <span>
-                    <a href="#" id="contraste"><i class="fas fa-adjust"></i><span id="textocontraste">Alto Contraste</span></a>
+                    <a id="contraste"><i class="fas fa-adjust"></i><span id="textocontraste">Alto Contraste</span></a>
                 </span>
             </div>
         </nav>
@@ -45,22 +38,22 @@
     <section id="consultaCNH">
 
 
-        <div class="container" id="consulta-container">
-            <div class="consulta-title">
-                <h2>CONSULTA DE CNH</h2>
-            </div>
-            <div class="registrados active" id="registradosContent">
-                <p>Quem possui veículo já registrado pelo NK pode obter as informações <br> necessárias para manter o veículo regularizado e também para realizar os <br> serviços de Comunicação de Venda ou Transferência de Propriedade.</p>
-                <form method="post" action="consulta.php" id="consultaForm">
-                    <label for="cpf">CPF:</label>
-                    <input type="text" id="cpf" name="cpf">
-                    <input id="consult" type="submit" value="Consultar">
-                </form> 
-            </div>
-
+    <div class="container" id="consulta-container">
+        <div class="consulta-title">
+        <h2>CONSULTA DE CNH</h2>
+        </div>
+        <div class="registrados active" id="registradosContent">
+            <p>Quem possui veículo já registrado pelo NK pode obter as informações necessárias para manter o veículo regularizado e também para realizar os serviços de Comunicação de Venda ou Transferência de Propriedade.</p>
+            <form method="post" action="consulta.php" id="consultaForm">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf">
+                <input id="consult" type="submit" value="Consultar">
+            </form> 
         </div>
 
-    </section>
+</div>
+
+</section>
     <section id="resultado-consulta">
         <div class="container" id="resultado-container">
             
@@ -73,23 +66,23 @@
 <footer>
     <!-- footer site detran-->
     <div class="background-footer">
-        <div class="logos-footer">
-            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+        <div class="logos-footer" >
+            <a class="logos-footer-color" href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a class="logos-footer-color" href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a class="logos-footer-color" href="#" target="_blank"><i class="bi bi-github"></i></a>
+            <a class="logos-footer-color" href="#" target="_blank"><i class="bi bi-facebook"></i></a>
         </div>
         <div class="sobre-footer">
             <p id="Sobre-destaque">Sobre a Nk:</p>
-            <a href="#">Consultoria</a>
-            <a href="#">Serviços Web</a>
-            <a href="#">Banco de dados</a>
-            <a href="#">Aplicações</a>
+            <a class="sobre-footer-color" href="#">Consultoria</a>
+            <a class="sobre-footer-color" href="#">Serviços Web</a>
+            <a class="sobre-footer-color" href="#">Banco de dados</a>
+            <a class="sobre-footer-color" href="#">Aplicações</a>
         </div>
         <div class="contatos-footer">
             <p id="Contatosfooter">Contatos</p>
-            <a href="#">NKsolutions_@outlook.com</a>
-            <a href="#">NKsupport@gmail.com</a>
+            <a class="sobre-footer-color" href="#">NKsolutions_@outlook.com</a>
+            <a class="sobre-footer-color" href="#">NKsupport@gmail.com</a>
         </div>
         <div class="copyright">
             <p>Copyright &copy; NK It Solutions</p>

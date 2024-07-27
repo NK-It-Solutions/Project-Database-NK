@@ -4,6 +4,61 @@ body, html {
     margin: 0;
 }
 
+header, .navbar {
+    background-color: #060142;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.logo {
+    margin-left: 32px;
+}
+
+#contraste {
+    margin-right: 10px;
+}
+
+#textocontraste {
+    color: white;
+    margin-left: 10px;
+    margin-right: 32px;
+    font-size: 14.4px;
+}
+
+.fas {
+    color: white;
+    margin-right: 2.88px;
+}
+
+.trilho {
+    cursor: pointer;
+}
+
+.trilho.dark #textocontraste {
+    color: white;
+}
+
+.trilho.dark .fas {
+    color: white;
+}
+
+body.dark {
+    background-color: black;
+}
+
+body.dark .navbar{
+    background-color: black;
+}
+
+body.dark .background-image {
+    background-image: none;
+}
+
+
 .container {
     padding: 70px 15px;
 }
@@ -103,6 +158,40 @@ header, .navbar {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     height: 50vh;
     margin: 0 15px;
+}
+
+#consulta-container p {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+body.dark #consulta-container {
+    background-color: black;
+    border: 2px solid orangered;
+}
+
+body.dark #consulta-container p {
+    color: white;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+body.dark .consulta-title {
+    border-bottom: 3px solid orangered;
+    color: orangered;
+}
+
+body.dark label {
+    color: white;
+}
+
+body.dark input {
+    border-color: orangered;
+}
+
+body.dark #consult {
+    background-color: black;
+    color: orangered;
 }
 
 .consulta-title {
@@ -267,4 +356,18 @@ input {
         width: 200px;
         max-width: none;
     }
+}
+
+@media screen and (max-width:992px){
+    #textocontraste {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:992px){
+    .fas {
+        margin-right: 30px;
+    }
+    
 }

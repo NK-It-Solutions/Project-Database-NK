@@ -1,17 +1,90 @@
-/* Estilos Gerais */
-body, html {
-    height: 100%;
-    font-family: "Poppins" , sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins" , sans-serif;
     text-decoration: none;
     list-style: none;
-    background-color: #f5f5f5;
 }
 
+#textocontraste {
+    color: white;
+    margin-left: 10px;
+    margin-right: 32px;
+    font-size: 14.4px;
+}
 
+.fas {
+    color: white;
+    margin-right: 2.88px;
+}
+
+.trilho {
+    cursor: pointer;
+}
+
+.trilho.dark #textocontraste {
+    color: white;
+}
+
+.trilho.dark .fas {
+    color: white;
+}
+
+body.dark {
+    background-color: black;
+}
+
+body.dark .navbar{
+    background-color: black;
+}
+
+body.dark .my-5 {
+    color: white;
+}
+
+body.dark .background-faq {
+    border-top: 5px solid orangered;
+    border-bottom: 5px solid orangered;
+    height: 40vh;
+    background-image: url(https://img.freepik.com/fotos-premium/imagem-borrada-de-gotas-de-chuva-no-para-brisa_59109-140.jpg?w=740);
+    background-size: cover;
+}
+
+body.dark .accordion-button {
+    background-color: black;
+    color: white;
+}
+
+body.dark .accordion-body {
+    background-color: black;
+    color: white;
+}
+
+body.dark #title-faq {
+    color: orangered;
+}
+
+body.dark .form {
+    background-color: black;
+    border-top: 2px solid orangered;
+    border-radius: 0px;
+  }
+
+body.dark .sendMessage-btn {
+    outline: 2px solid orangered;
+}
+
+body.dark .sendMessage-btn:hover {
+    color: rgb(223, 74, 20);
+}
+
+body.dark .form-field {
+    background-color: black;
+    border: 2px solid orangered;
+}
 
 .container {
     padding: 70px 15px;
@@ -24,10 +97,16 @@ body, html {
 
 header, .navbar {
     background-color: #060142;
+    height: 10vh;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 3px 6px #00000029;
-    text-align: center;
+}
+
+.logo {
+    margin-left: 32px;
 }
 
 #NKlogo {
@@ -173,7 +252,7 @@ header, .navbar {
   
   .sendMessage-btn:hover {
     transition: all ease-in-out 0.3s;
-    color: #000;
+    color: grey;
     cursor: pointer;
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
   }
@@ -183,3 +262,18 @@ header, .navbar {
     border-radius: 22px;
     transition: all 0.3s;
   }
+
+
+  @media screen and (max-width:992px){
+    #textocontraste {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:992px){
+    .fas {
+        margin-right: 30px;
+    }
+    
+}

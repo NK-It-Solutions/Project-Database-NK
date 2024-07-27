@@ -23,6 +23,10 @@ header, .navbar {
     box-shadow: 0 3px 6px #00000029;
 }
 
+.btn {
+    border: 1px solid white;
+}
+
 .logo {
     margin-left: 32px;
 }
@@ -141,6 +145,7 @@ label {
     padding-inline-start: 26px;
     padding-inline-end: 26px;
     border-bottom-left-radius: 24px;
+    border: none;
     border-top-left-radius: 24px;
     border-bottom-right-radius: 24px;
     border-top-right-radius: 24px;
