@@ -36,24 +36,31 @@
 </header>
 <div class="background-image">
     <section id="consultaCNH">
+
+
         <div class="container" id="consulta-container">
             <div class="consulta-title">
                 <h2>CONSULTA DE PLACA</h2>
             </div>
             <div class="registrados active" id="registradosContent">
-                <p>Quem possui veículo já registrado pelo NK pode obter as informações necessárias para manter o veículo regularizado e também para realizar os serviços de Comunicação de Venda <br>  ou Transferência de Propriedade.</p>
+                <p>Quem possui veículo já registrado pelo NK pode obter as informações <br> necessárias para manter o veículo regularizado e também para realizar os <br> serviços de Comunicação de Venda ou Transferência de Propriedade.</p>
                 <form method="post" action="NKPlaca.php" id="consultaForm">
                     <label for="cpf">PLACA:</label>
                     <input type="text" id="cpf" name="cpf">
                     <input id="consult" type="submit" value="Consultar">
                 </form> 
             </div>
-        </div>
+
+        
+
+    
+            <section id="resultado-consulta">
+                <div class="container" id="resultado-container">
+            
+                </div>
+        </div>        
     </section>
-    <section id="resultado-consulta">
-        <div class="container" id="resultado-container"></div>
-    </section>
-</div>
+</div>    
 
 <section id="Contatos">
     <footer>
