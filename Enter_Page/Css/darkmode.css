@@ -6,12 +6,17 @@
     color: white;
 }
 
+body.dark header {
+    border-bottom: 2px solid orangered;
+    background-color: rgb(15, 14, 14);
+}
+
 body.dark {
     background-color: black;
 }
 
 body.dark .navbar{
-    background-color: black;
+    background-color: rgb(15, 14, 14);
 }
 
 body.dark .container-serv   {
@@ -108,10 +113,21 @@ body.dark #NKlogo-dark {
 
 body.dark .title-alerts h2{
     border-bottom: 2px solid orangered;
-    border-left: 2px solid orangered;
 }
 
 body.dark .title-news  {
     border-bottom: 2px solid orangered;
-    border-left: 2px solid orangered;
+}
+
+body.dark .consulta-container {
+    background-color: black;
+    border: 1px solid orangered;
+}    
+
+body.dark .consulta-container h2{
+    color: orangered;
+}
+
+body.dark .consulta-container p{
+    color: orangered;
 }

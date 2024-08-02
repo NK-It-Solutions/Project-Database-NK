@@ -1,0 +1,130 @@
+/* Estilos Gerais */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header, .navbar {
+    background-color: #060142;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.logo {
+    margin-left: 32px;
+}
+
+#contraste {
+    margin-right: 10px;
+}
+
+#textocontraste {
+    color: white;
+    margin-left: 10px;
+    margin-right: 32px;
+    font-size: 14.4px;
+}
+
+.fas {
+    color: white;
+    margin-right: 2.88px;
+}
+
+/* Estilização do conteúdo */
+h1 {
+    color: #2b5797;
+}
+
+.highlight {
+    color: #2b5797;
+    background-color: #ffff00;
+}
+
+table {
+    width: 300px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header, .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    #navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    #ipva-cont {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    table, th, td {
+        flex-direction: column;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #virada {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    #textocontraste {
+        font-size: 12px;
+    }
+
+    .fas {
+        margin-right: 1.44px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    table, th, td {
+        flex-direction: column;
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    #ipva-cont {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #virada {
+        flex-direction: column;
+    }
+}

@@ -1,20 +1,64 @@
-
-.container {
-    margin-top: 2rem;
-}
-
 a {
     text-decoration: none;
 }
 
+#ConsultaCNH {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+.consulta-container {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(245, 225, 225);
+    width: 400px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+#registrar-carro {
+    margin-top: 2rem;
+}
+
+#sobre-legis {
+    margin-top: 2rem;
+}
+
+#legis-btn i {
+    font-size: 35px;
+}
+
+
+#acc-btn button{
+    background-color: #972800;
+    color: #fff;
+    width: 15rem;
+    border-radius: 15px;
+    border: none;
+    height: 2rem;
+    cursor: pointer;
+}
+
+#vei-btn button{
+    background-color: #006cb4 ;
+    color: #fff;
+    width: 15rem;
+    border-radius: 15px;
+    border: none;
+    height: 2rem;
+    cursor: pointer;
+}
+
+
+
 .container-serv {
     border: 2px solid blue;
-    margin-top: 2rem;
     height: auto;
     width: 100%; 
     max-width: 800px; 
-    margin-bottom: 1rem;
-
     background-color: #fff;
     padding: 1rem; 
     box-sizing: border-box;
@@ -144,13 +188,21 @@ a {
 
 #services {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
+    #services{
+        flex-direction: column; 
+    }
+}
+
+
+@media (max-width: 768px) {
     .container-serv {
-        padding: 0.5rem; 
+        padding: 0.5rem;
+        margin-top: 2rem; 
     }
 
     .tab-buttons {

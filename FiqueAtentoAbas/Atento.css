@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:"Poppins", sans-serif;;
+}
+
+
+.background-top{
+    margin-top: 2rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 99%;
+    height: 15rem;
+    border-bottom: solid #006cb4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 3;
+}
+
+#volante{
+    display: flex;
+    height: 12rem;
+    border-radius: 10px;
+    margin-bottom: 79.4vh;
+    margin-left: 20vh;
+
+}
+
+.Alerta p{
+    display: flex;
+    font-size: 3.6vh;
+    margin-top: 12px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #006cb4;
+}
+
+.Alerta{
+    margin-bottom: 75.6vh;
+}
+
+.background-mid{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 220vh;
+    border-top: solid #006cb4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#Ob1{
+    font-size: 2vh;
+    font-weight: bold;
+    color: #006cb4;
+}
+
+.Content{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.Content #ob-2{
+    padding-top: 20px;
+}
+
+.content-2{
+    padding-top: 17px ;
+    font-size: 16px;
+}
+
+#ob-3{
+    font-size: 2vh;
+    font-weight: bold;
+    color: #006cb4;
+}
+
+#ob-4{
+    padding-top: 17px ;
+}
+
+.background-mid2{
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    height: 35vh;
+    width: 45vh;
+    border: #006cb4 solid;
+    border-width: 1px;
+}
+
+#ob-5{
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: #006cb4;
+    border-bottom: #006cb4 solid;
+    border-width: 1px;
+}
+
+#ob-6{
+    font-size: 2vh;
+    font-weight: bold;
+    color: #006cb4;
+    padding-top: 10px;
+}
+
+.content-3 p{
+    font-size: 17px;
+    
+}
+
+.content-4{
+    padding-top: 15px;
+}
+
+.background-curso-1{
+    margin-left: 30px;
+    margin-top: 30rem;
+    max-width: 620px;
+    position: absolute;
+    background-color: #F8F9FA
+}
+
+.curso-1 img{
+    float: left;
+    margin-right: 10px;
+}
+
+.curso-1 span{
+    color: #006cb4;
+    font-weight: bold;
+}
+
+.curso-1 p{
+    padding-left: 10px;
+}
+
+.background-curso-2{
+    margin-left: 71vh;
+    margin-top: 30rem;
+    max-width: 620px;
+    position: absolute;
+    background-color: #F8F9FA
+}
+
+.curso-2 img{
+    float: left;
+    margin-right: 10px;
+}
+
+.curso-2 span{
+    color: #006cb4;
+    font-weight: bold;
+}
+
+.background-curso-3{
+    margin-left: 30px;
+    margin-top: 60rem;
+    max-width: 620px;
+    position: absolute;
+    background-color: #F8F9FA
+}
+
+.curso-3 img{
+    float: left;
+    margin-right: 10px;
+}
+
+.curso-3 span{
+    color: #006cb4;
+    font-weight: bold;
+}
+
+.curso-3 p{
+    padding-left: 10px;
+}
+
+.background-curso-4{
+    margin-left: 71vh;
+    margin-top: 60rem;
+    max-width: 620px;
+    position: absolute;
+    background-color: #F8F9FA
+}
+
+.curso-4 img{
+    float: left;
+    margin-right: 10px;
+}
+
+.curso-4 span{
+    color: #006cb4;
+    font-weight: bold;
+}
+
+.curso-4 p{
+    padding-left: 10px;
+}
+
+.background-curso-5{
+    margin-left: 30px;
+    margin-top: 90rem;
+    max-width: 620px;
+    position: absolute;
+    background-color: #F8F9FA
+}
+
+.curso-5 img{
+    float: left;
+    margin-right: 10px;
+}
+
+.curso-5 span{
+    color: #006cb4;
+    font-weight: bold;
+}
+
+.curso-5 p{
+    padding-left: 10px;
+}
+
+.background-curso-6{
+    margin-left: 71vh;
+    margin-top: 90rem;
+    max-width: 620px;
+    position: absolute;
+    background-color: #F8F9FA
+}
+
+.curso-6 img{
+    float: left;
+    margin-right: 10px;
+}
+
+.curso-6 span{
+    color: #006cb4;
+    font-weight: bold;
+}
+
+.curso-6 p{
+    padding-left: 10px;
+}
+
+.background-curso-7{
+    margin-left: 30px;
+    margin-top: 175vh;
+    max-width: 620px;
+    position: absolute;
+    background-color: #F8F9FA
+}
+
+.curso-7 img{
+    float: left;
+    margin-right: 10px;
+}
+
+.curso-7 span{
+    color: #006cb4;
+    font-weight: bold;
+}
+
+.curso-7 p{
+    padding-left: 10px;
+}
+
+.background-footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.logos-footer,
+.sobre-footer,
+.contatos-footer {
+    flex: 1 1 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logos-footer a,
+.sobre-footer a,
+.contatos-footer a {
+    color: #003cff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.logos-footer a:hover,
+.sobre-footer a:hover,
+.contatos-footer a:hover {
+    text-decoration: underline;
+}
+
+#Sobre-destaque,
+#Contatosfooter {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #003cff;
+}
+
+.logos-footer i {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.copyright {
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #003cff;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, .navbar {
+    background-color: #060142;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.btn {
+    border: 1px solid white;
+}
+
+.logo {
+    margin-left: 32px;
+}
+
+#contraste {
+    margin-right: 10px;
+}
+
+#textocontraste {
+    color: white;
+    margin-left: 10px;
+    margin-right: 32px;
+    font-size: 14.4px;
+}
+
+.fas {
+    color: white;
+    margin-right: 2.88px;
+}
+
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .background-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logos-footer,
+    .sobre-footer,
+    .contatos-footer {
+        flex: 1 1 100%;
+        align-items: center;
+    }
+    .copyright {
+        margin-top: 10px;
+    }
+}

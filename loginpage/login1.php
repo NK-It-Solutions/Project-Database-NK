@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verificar a senha
         if (password_verify($senha, $hashed_password))  {
             $_SESSION['user_id'] = $id;
-            header("Location:http://localhost/Project-Database-NK-main/Pesquisa/consulta.php");
+            header("Location:http://localhost/Project/Project-Database-NK/Pesquisa/ConsultaCNH/consulta.php");
             exit;
         } else {
             echo "Senha incorreta.";
@@ -98,11 +98,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </div>
                         </div>
                         <div class="button-panel" id="login-button-panel">
-                        <a href="http://localhost/project/Pesquisa/ConsultaCNH/consulta.php"> <button id="enter-account-id" type="submit" tabindex="2">Continuar</button></a>
+                        <a href="http://localhost/Project/Project-Database-NK/Pesquisa/ConsultaCNH/consulta.php"> <button id="enter-account-id" type="submit" tabindex="2">Continuar</button></a>
                         </div>
                         <div id="cadastro">
                             <p>Ainda não possui uma conta no sistema?
-                                <a href="http://localhost/Project-Database-NK-main/registerpage/register.php" id="botaocadastro">Registre-se</a>
+                                <a href="http://localhost/Project/Project-Database-NK-main/registerpage/register.php" id="botaocadastro">Registre-se</a>
                             </p>
                         </div>
                     </div>

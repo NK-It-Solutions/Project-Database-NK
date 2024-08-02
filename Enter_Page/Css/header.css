@@ -1,6 +1,10 @@
+header {
+    border-bottom:2px solid #006cb4;
+}
+
 
 .container {
-    padding: 70px 0;
+    padding: 20px 0;
 }
 
 #nav-container {
@@ -66,13 +70,8 @@ header, .navbar {
 }
 
 /* Botão acessibilidade */
-
-#acessibilidade {
-    margin-top: 10px;
-}
-
 #contraste {
-    margin-right: 10px;
+    margin-right: 7px;
 }
 
 
@@ -89,6 +88,51 @@ header, .navbar {
 }
 
 .trilho {
+    margin-top: 0.4rem;
     cursor: pointer;
 }
 
+/* Estilos Responsivos */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    #navbar-links {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
+
+    #navbar-links {
+        justify-content: flex-start;
+    }
+
+    .trilho {
+        margin-top: 10px;
+        margin-left: 2rem;
+    }
+
+    #NKlogo, #NKlogo-dark {
+        width: 90px;
+    }
+}

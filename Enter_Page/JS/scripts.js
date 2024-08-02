@@ -39,3 +39,19 @@ trilho.addEventListener('click', ()=>{
     trilho.classList.toggle('dark')
     body.classList.toggle('dark')
 })
+
+//POPUP
+
+document.querySelector('.close-notification').addEventListener('click', function() {
+    var notificationWrapper = document.getElementById('notification-wrapper');
+    if (notificationWrapper) {
+        notificationWrapper.style.display = 'none';
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        document.getElementById("notification-wrapper").classList.add("show");
+    }, 100); 
+});
