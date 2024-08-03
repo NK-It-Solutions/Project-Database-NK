@@ -100,6 +100,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div class="button-panel" id="login-button-panel">
                             <a href="file:///C:/xampp/htdocs/Project/Project-Database-NK/Pesquisa/IPVA/ipva.html"> <button id="enter-account-id" type="submit" tabindex="2">Continuar</button></a>
                         </div>
+
+                        <div class="button-panel" id="login-button-panel-mobile">
+                            <a href="https://i.ibb.co/K9R78YR/imagem-2024-08-02-213353939.png"> <button id="enter-account-id" type="submit" tabindex="2">Continuar</button></a>
+                        </div>
+
                         <div id="cadastro">
                             <p>Ainda não possui uma conta no sistema?
                                 <a href="/Project-Database-NK/registerpage/register.php" id="botaocadastro">Registre-se</a>

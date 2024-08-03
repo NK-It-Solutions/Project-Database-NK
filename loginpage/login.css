@@ -90,6 +90,12 @@ label {
     justify-content: end;
 }
 
+#login-button-panel-mobile {
+    display: none;
+
+}
+
+
 #iconcpfblack {
     display: none;
 }
@@ -98,6 +104,22 @@ label {
     display: flex;
     margin-top: 30px;
     margin-bottom: 25px;
+}
+
+#enter-account-id {
+    color: white;
+    background-color: #060142;
+    background-image: none;
+    padding-block-end: 7px;
+    padding-block-start: 7px;
+    padding-inline-start: 26px;
+    padding-inline-end: 26px;
+    border-bottom-left-radius: 24px;
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 #enter-account-id {
@@ -193,6 +215,13 @@ label {
 
 @media screen and (max-width:992px){
     #login-button-panel {
+        justify-content: center;
+} 
+}
+
+@media screen and (max-width:992px){
+    #login-button-panel {
+        display: block;
         justify-content: center;
 } 
 }

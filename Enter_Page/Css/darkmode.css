@@ -131,3 +131,42 @@ body.dark .consulta-container h2{
 body.dark .consulta-container p{
     color: orangered;
 }
+
+body.dark .content-wrapper .content-title.not-registered {
+    color: orangered;
+}
+
+body.dark .content-wrapper .content-title.registered {
+    color: orangered;
+}
+
+body.dark .cards-box.not-registered a {
+    color: orangered;
+}
+
+body.dark .cards-box.registered a {
+    color: orangered;
+}
+
+body.dark .tab-buttons button {
+    background-color: black;
+    border: 1px solid orangered;
+}
+
+body.dark #hab-btn {
+    background-color: #000000;
+}
+
+body.dark #acc-btn button {
+    background-color: #000000;
+    border: 1px solid orangered;
+}
+
+body.dark #vei-btn button {
+    background-color: #000000;
+    border: 1px solid orangered;
+}
+
+body.dark #legis-btn i{
+   color: orangered;
+}
