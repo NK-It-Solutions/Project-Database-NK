@@ -75,7 +75,7 @@
                             <button type="submit" name="submit" class="btn btn-primary" id="enter-account-id" tabindex="2">Continuar</button>
                         </div>
                         <div id="cadastro">
-                            <p>Já possui conta no sistema? <a href="/Project-Database-NK/loginpage/login.php" id="botaocadastro">Entre</a></p>
+                            <p>Já possui conta no sistema? <a href="http://localhost/Project/Project-Database-NK/loginpage/login.php" id="botaocadastro">Entre</a></p>
                         </div>
                     </div>
                 </form>
