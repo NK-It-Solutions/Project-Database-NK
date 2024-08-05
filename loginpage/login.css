@@ -221,10 +221,17 @@ label {
 
 @media screen and (max-width:992px){
     #login-button-panel {
+        display: none;
+} 
+}
+
+@media screen and (max-width:992px){
+    #login-button-panel-mobile {
         display: block;
         justify-content: center;
 } 
 }
+
 
 @media screen and (max-width:992px){
     #enter-account-id {

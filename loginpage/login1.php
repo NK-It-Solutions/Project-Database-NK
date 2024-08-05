@@ -102,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                         <div id="cadastro">
                             <p>Ainda não possui uma conta no sistema?
-                                <a href="http://localhost/Project/Project-Database-NK-main/registerpage/register.php" id="botaocadastro">Registre-se</a>
+                                <a href="http://localhost/Project/Project-Database-NK/registerpage/register.php" id="botaocadastro">Registre-se</a>
                             </p>
                         </div>
                     </div>

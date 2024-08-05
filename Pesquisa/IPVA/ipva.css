@@ -84,9 +84,9 @@ th {
         margin: 5px 0;
     }
 
-    #ipva-cont {
+    #virada {
         flex-direction: column;
-        max-width: 100%;
+        width: 100px;
     }
 
     table, th, td {
