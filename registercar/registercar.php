@@ -32,32 +32,59 @@
     <section id="login">
         <div id="logindiv" class="container">
             <main id="main-signin">
-                <form class="mx-lg-4" action="register.php" method="POST">
+                <form class="mx-lg-4" action="registercar.php" method="POST">
                     <div class="card" id="logincpf">
-                        <h3>Crie sua conta no sistema</h3>
+                        <h3>Registro de veículo</h3>
                         <a id="textocpf1">
                             <img id="iconcpf" src="https://sso.acesso.gov.br/assets/govbr/img/icons/id-card-solid.png" class="img-fluid">
                             <img id="iconcpfblack" src="https://i.ibb.co/60fDJ9f/id-card-solid.png" class="img-fluid">
                             Dados do registro
                         </a>
                         <div class="row">
-                            <p id="textocpf2">Digite seus dados para <strong>criar</strong> sua conta</p>
+                            <p id="textocpf2">Digite os dados do <strong>veículo</strong></p>
                             <div class="col-sm-6 col-xl-4">
-                                <label>Nome</label>
-                                <input type="text" name="nome" class="form-control" placeholder="Digite seu Nome" required>
+                                <label>Modelo</label>
+                                <input type="text" name="modelo" class="form-control" placeholder="Digite o modelo do carro" required>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                                 <label>CPF</label>
                                 <input type="text" name="cpf" class="form-control" placeholder="Digite seu CPF" required>
                             </div>
                             <div class="col-sm-6 col-xl-4">
-                                <label>E-mail</label>
-                                <input type="email" name="email" class="form-control" placeholder="Digite seu E-mail" required>
+                                <label>Chassi</label>
+                                <input type="chassi" name="chassi" class="form-control" placeholder="Digite o Chassi" required>
                             </div>
                             <div class="col-sm-6 col-xl-3">
-                                <label>Telefone</label>
-                                <input type="text" name="telefone" class="form-control" placeholder="Digite seu Telefone">
+                                <label>Placa</label>
+                                <input type="text" name="placa" class="form-control" placeholder="Digite a placa do carro">
                             </div>
+                            <div class="col-sm-6 col-xl-3">
+                                <label>Marca</label>
+                                <input type="text" name="marca" class="form-control" placeholder="Digite a marca do carro">
+                            </div>
+                            <div class="col-sm-6 col-md-3 col-xl-3">
+                                <label>Potência</label>
+                                <input type="text" name="potencia" class="form-control" placeholder="Digite a Potência" required>
+                            </div>
+                            <div class="col-sm-6 col-md-3 col-xl-3">
+                                <label>Ano</label>
+                                <input type="number" name="ano" class="form-control" placeholder="Digite o ano" min="1900" max="2100" required>
+                            </div>
+                            <div class="col-sm-6 col-md-3 col-xl-3">
+                                <label>Cor</label>
+                                <input type="text" name="Cor" class="form-control" placeholder="Digite a cor predominante" required>
+                            </div>
+                            <div class="col-sm-6 col-md-3 col-xl-3">
+                                <label>Combustível</label>
+                                    <select name="combustivel" class="form-control" required>
+                                        <option value="">Selecione o combustível</option>
+                                        <option value="Gasolina">Gasolina</option>
+                                        <option value="Etanol">Etanol</option>
+                                        <option value="Diesel">Diesel</option>
+                                        <option value="gnv">GNV</option>
+                                        <option value="Flex">Flex</option>
+                                        </select>
+                                    </div>
                             <div class="col-sm-6 col-md-3 col-xl-3">
                                 <label>Estado</label>
                                 <select name="estado" class="form-control" required>
@@ -90,20 +117,10 @@
                                     <option value="TO">TO - Tocantins</option>
                                 </select>
                             </div>
-                            <div class="col-sm-6 col-md-3 col-xl-3">
-                                <label>CEP</label>
-                                <input type="text" name="cep" class="form-control" placeholder="Digite seu CEP" required>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-xl-3">
-                                <label>Senha</label>
-                                <input type="password" name="senha" class="form-control" placeholder="Digite sua Senha" required>
-                            </div>
+
                         </div>
                         <div class="button-panel" id="login-button-panel">
                             <button type="submit" name="submit" class="btn btn-primary" id="enter-account-id" tabindex="2">Continuar</button>
-                        </div>
-                        <div id="cadastro">
-                            <p>Já possui conta no sistema? <a href="http://localhost/Project/Project-Database-NK/loginpage/login.php" id="botaocadastro">Entre</a></p>
                         </div>
                     </div>
                 </form>
@@ -125,28 +142,32 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = $_POST["nome"];
-    $cpf = $_POST["cpf"];
-    $telefone = $_POST["telefone"];
-    $email = $_POST["email"];
+    $nome_veiculo = $_POST["modelo"];
+    $CPF = $_POST["cpf"];
+    $placa = $_POST["placa"];
+    $chassi = $_POST["chassi"];
+    $ano_modelo = $_POST["ano"];
     $estado = $_POST["estado"];
-    $cep = $_POST["cep"];
-    $senha = password_hash($_POST['senha'], PASSWORD_BCRYPT);
+    $potencia = $_POST["potencia"];
+    $cor_predominante = $_POST["Cor"];
+    $combustivel = $_POST["combustivel"];
+    $marca_modelo = $_POST["marca"];
+    
 
-    $sql = "INSERT INTO conta (Nome, CPF, Telefone, Email, Estado, CEP, Senha) 
-            VALUES ('$nome', '$cpf', '$telefone', '$email','$estado', '$cep', '$senha')";
+    $sql = "INSERT INTO info_veiculo (nome_veiculo,chassi,placa,ano_modelo,cpf,marca_modelo,potencia,cor_predominante,combustivel,estado) 
+            VALUES ('$nome_veiculo','$chassi','$placa','$ano_modelo','$CPF','$marca_modelo','$potencia','$cor_predominante','$combustivel','$estado')";
 
 if ($conn->query($sql) === TRUE) {
     echo '<div style="padding: 10px; background-color: #dff0d8; color: #3c763d; border: 1px solid #d6e9c6; border-radius: 5px; font-family: Arial, sans-serif;">
             <strong>Sucesso!</strong> Registro criado com sucesso.
           </div>';
-    } 
-else {
+} else {
     echo '<div style="padding: 10px; background-color: #f2dede; color: #a94442; border: 1px solid #ebccd1; border-radius: 5px; font-family: Arial, sans-serif;">
             <strong>Erro!</strong> Não foi possível criar o registro.
           </div>';
-    }
 }
+}
+
 $conn->close();
 ?>
 </body>
