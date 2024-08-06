@@ -19,6 +19,10 @@ body.dark .navbar{
     background-color: rgb(15, 14, 14);
 }
 
+body.dark .background-footer {
+    border-top-color: orangered;
+}
+
 body.dark .container-serv   {
     background-color: black;
     border-color: orangered;

@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 /* Estilos Gerais */
 body, html {
     height: 100%;
-    font-family: "Poppins" , sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +12,43 @@ body, html {
     background-color: #f5f5f5;
 }
 
+header, .navbar {
+    background-color: #060142;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px #00000029;
+}
 
+.btn {
+    border: 1px solid white;
+}
+
+.trilho {
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 32px;
+}
+
+#contraste {
+    margin-right: 10px;
+}
+
+#textocontraste {
+    color: white;
+    margin-left: 10px;
+    margin-right: 32px;
+    font-size: 14.4px;
+}
+
+.fas {
+    color: white;
+    margin-right: 2.88px;
+}
 
 .container {
     padding: 70px 15px;
@@ -138,6 +175,96 @@ header, .navbar {
     width: 18rem;
 }
 
+/*dark mode*/
+
+body.dark .background-footer {
+    background-color: rgb(0, 0, 0);
+}
+
+body.dark .logos-footer-color {
+    color: orangered;
+}
+
+body.dark #Sobre-destaque {
+    color: orangered;
+}
+
+body.dark li {
+    color: white;
+}
+
+body.dark ul {
+    margin-bottom: 0px;
+}
+
+body.dark #Contatosfooter {
+    color: orangered;
+}
+
+body.dark .copyright {
+    color: orangered;
+}
+
+body.dark .sobre-footer-color {
+    color: white;
+}
+
+.trilho.dark #textocontraste {
+    color: white;
+}
+
+.trilho.dark .fas {
+    color: white;
+}
+
+body.dark {
+    background-color: black;
+}
+
+body.dark .navbar{
+    background-color: black;
+}
+
+body.dark .my-5 {
+    color: white;
+    background-color: black;
+}
+
+body.dark #others-title {
+    color: orangered;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+body.dark span {
+    color: orangered;
+}
+
+body.dark #golpe-title {
+    color: orangered;
+}
+
+body.dark main {
+    background-color: black;
+}
+
+body.dark #others {
+    background-color: black;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+body.dark #textobugadodokrlvsf {
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+body.dark .background-faq {
+    border-top : 5px solid orangered;
+    border-bottom : 5px solid orangered;
+}
 
 /*footer*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');

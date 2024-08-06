@@ -10,7 +10,6 @@ body, html {
     font-family: "Poppins" , sans-serif;
     text-decoration: none;
     list-style: none;
-    background-color: #f5f5f5;
 }
 
 .logo {
@@ -327,6 +326,18 @@ body.dark span {
     color: orangered;
 }
 
+body.dark p {
+    color: white;
+}
+
+body.dark li {
+    color: white;
+}
+
+body.dark figcaption {
+    color: white;
+}
+
 body.dark #golpe-title {
     color: orangered;
 }
@@ -351,6 +362,14 @@ body.dark #textobugadodokrlvsf {
 body.dark .background-faq {
     border-top : 5px solid orangered;
     border-bottom : 5px solid orangered;
+}
+
+body.dark header {
+    background-color: black;
+}
+
+body.dark h2 {
+    color: orangered;
 }
 
 @media screen and (max-width:992px){
@@ -383,7 +402,7 @@ body.dark #Contatosfooter {
     color: orangered;
 }
 
-body.dark .copyright {
+body.dark #copyrightid {
     color: orangered;
 }
 
