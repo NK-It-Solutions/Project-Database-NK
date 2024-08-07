@@ -179,9 +179,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             record += \'<div class="nome">Nome: ' . $row["nome_veiculo"] . '<br></div>\';
             record += \'<div class="ano_mod">Ano/Modelo: ' . $row["ano_modelo"] . '<br></div>\';
             record += \'<div class="marca">Marca: ' . $row["marca_modelo"] . '<br></div>\';
-            record += \'<div class="ano_fab">Ano/Fabricação: ' . $row["ano_fabricacao"] . '<br></div>\';
+            record += \'<div class="combuistivel">Combustível: ' . $row["combustivel"] . '<br></div>\';
+            record += \'<div class="chassi">Chassi: ' . $row["chassi"] . '<br></div>\';
             record += \'<div class="estado">Estado: ' . $row["estado"] . '<br></div>\';
             record += \'<div class="cor">Cor: ' . $row["cor_predominante"] . '<br></div>\';
+            record += \'<div class="potencia">Potência em CV: ' . $row["potencia"] . '<br></div>\';
             record += \'<button onclick="removeRecord(' . $row["id"] . ')">Remover</button>\';
             record += \'</div>\';
             document.getElementById("resultado-container").innerHTML += record;
