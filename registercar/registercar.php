@@ -126,7 +126,7 @@
                 </form>
             </main>
         </div>     
-    </section>
+    </section>     
     <?php
 $servername = "localhost";
 $username = "root";

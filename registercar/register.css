@@ -14,6 +14,7 @@ a {
 }
 
 header, .navbar {
+    border-bottom: 4px solid blue;
     background-color: #060142;
     height: 10vh;
     display: flex;
@@ -48,7 +49,10 @@ header, .navbar {
 }
 
 #login {
-    margin-top: 40px;
+    background-image: url(https://c.wallhere.com/images/c2/58/3f50a6598e55487e3fd04c2520f9-1954753.jpg!d);
+    background-size: cover;
+    height: 90vh;
+    background-size: cover;
 }
 
 #logindiv {
@@ -296,12 +300,17 @@ label {
     color: white;
 }
 
+body.dark #login {
+    background-image: none; 
+}
+
 body.dark {
     background-color: black;
 }
 
 body.dark .navbar{
     background-color: black;
+    border-bottom: none
 }
 
 body.dark .card{

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+/* Press F for GordaoXJ*/
+
 *{
     margin: 0;
     padding: 0;
@@ -8,9 +10,17 @@
     list-style: none;
     font-family:"Poppins", sans-serif;;
 }
+main {
+    margin-bottom: 10px;
+}
 
+#cursosespec {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+}
 
-.background-top{
+#background-top{
     margin-top: 2rem;
     display: flex;
     margin-left: auto;
@@ -28,8 +38,6 @@
     display: flex;
     height: 12rem;
     border-radius: 10px;
-    margin-bottom: 79.4vh;
-    margin-left: 20vh;
 
 }
 
@@ -46,14 +54,10 @@
     margin-bottom: 75.6vh;
 }
 
-.background-mid{
+#background-mid{
+    margin-top: 25px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
     height: 220vh;
     border-top: solid #006cb4;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -65,15 +69,11 @@
     color: #006cb4;
 }
 
-.Content{
-    margin-top: 20px;
+#Content{
     text-align: left;
     font-size: 16px;
 }
 
-.Content #ob-2{
-    padding-top: 20px;
-}
 
 .content-2{
     padding-top: 17px ;
@@ -90,14 +90,15 @@
     padding-top: 17px ;
 }
 
-.background-mid2{
-    margin-top: 10px;
+#background-mid2{
+    display: flex;
+    margin-left: 43rem;
+    margin-top: 5px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    height: 35vh;
-    width: 45vh;
+    width: 45vh;    
     border: #006cb4 solid;
     border-width: 1px;
+    position: absolute;
 }
 
 #ob-5{
@@ -115,17 +116,17 @@
     padding-top: 10px;
 }
 
-.content-3 p{
+#content-3 p{
     font-size: 17px;
     
 }
 
-.content-4{
+#content-4{
     padding-top: 15px;
 }
 
-.background-curso-1{
-    margin-left: 30px;
+#background-curso-1{
+    margin-left: 15rem;
     margin-top: 30rem;
     max-width: 620px;
     position: absolute;
@@ -144,15 +145,7 @@
 
 .curso-1 p{
     padding-left: 10px;
-}
-
-.background-curso-2{
-    margin-left: 71vh;
-    margin-top: 30rem;
-    max-width: 620px;
-    position: absolute;
-    background-color: #F8F9FA
-}
+}   
 
 .curso-2 img{
     float: left;
@@ -164,8 +157,7 @@
     font-weight: bold;
 }
 
-.background-curso-3{
-    margin-left: 30px;
+#background-curso-3{
     margin-top: 60rem;
     max-width: 620px;
     position: absolute;
@@ -186,10 +178,10 @@
     padding-left: 10px;
 }
 
-.background-curso-4{
-    margin-left: 71vh;
+#background-curso-4{
+    margin-left: 39.5rem;
     margin-top: 60rem;
-    max-width: 620px;
+    max-width: 460px;
     position: absolute;
     background-color: #F8F9FA
 }
@@ -208,8 +200,7 @@
     padding-left: 10px;
 }
 
-.background-curso-5{
-    margin-left: 30px;
+#background-curso-5{
     margin-top: 90rem;
     max-width: 620px;
     position: absolute;
@@ -231,10 +222,8 @@
 }
 
 .background-curso-6{
-    margin-left: 71vh;
-    margin-top: 90rem;
-    max-width: 620px;
-    position: absolute;
+    margin-top: 93rem;
+    max-width: 460px;
     background-color: #F8F9FA
 }
 
@@ -252,26 +241,8 @@
     padding-left: 10px;
 }
 
-.background-curso-7{
-    margin-left: 30px;
-    margin-top: 175vh;
-    max-width: 620px;
-    position: absolute;
-    background-color: #F8F9FA
-}
-
-.curso-7 img{
-    float: left;
-    margin-right: 10px;
-}
-
-.curso-7 span{
-    color: #006cb4;
-    font-weight: bold;
-}
-
-.curso-7 p{
-    padding-left: 10px;
+#hr1 {
+    margin-bottom: -5px ;
 }
 
 .background-footer {
@@ -282,31 +253,24 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.logos-footer,
-.sobre-footer,
-.contatos-footer {
+.logos-footer, .sobre-footer, .contatos-footer {
     flex: 1 1 200px;
     margin: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.logos-footer a,
-.sobre-footer a,
-.contatos-footer a {
+.logos-footer a, .sobre-footer a, .contatos-footer a {
     color: #003cff;
     text-decoration: none;
     margin: 5px 0;
 }
 
-.logos-footer a:hover,
-.sobre-footer a:hover,
-.contatos-footer a:hover {
+.logos-footer a:hover, .sobre-footer a:hover, .contatos-footer a:hover {
     text-decoration: underline;
 }
 
-#Sobre-destaque,
-#Contatosfooter {
+#Sobre-destaque, #Contatosfooter {
     font-weight: bold;
     margin-bottom: 10px;
     color: #003cff;
@@ -380,5 +344,401 @@ header, .navbar {
     }
     .copyright {
         margin-top: 10px;
+    }
+
+    main {
+        display: none;
+    }
+    
+    #cursosespec {
+        display: none;
+    }
+    
+    #background-top{
+        display: none;
+    }
+    
+    #volante{
+        display: none;
+    }
+    
+    .Alerta p{
+        display: none;
+    }
+    
+    .Alerta{
+        display: none;
+    }
+    
+    #background-mid{
+        display: none;
+    }
+    
+    #Ob1{
+        display: none;
+
+    }
+    #Content{
+        display: none;
+    }
+    
+    
+    .content-2{
+        display: none;
+    }
+    
+    #ob-3{
+        display: none;
+    }
+    
+    #ob-4{
+        display: none;
+    }
+    
+    #background-mid2{
+        display: none;
+    }
+    
+    #ob-5{
+        display: none;
+    }
+    
+    #ob-6{
+        display: none;
+    }
+    
+    #content-3 p{
+        display: none;
+        
+    }
+    
+    #content-4{
+        display: none;
+    }
+    
+    #background-curso-1{
+        display: none;
+    }
+    
+    .curso-1 img{
+        display: none;
+    }
+    
+    .curso-1 span{
+        display: none;
+    }
+    
+    .curso-1 p{
+        display: none;
+    }   
+    
+    .curso-2 img{
+        display: none;
+    }
+    
+    .curso-2 span{
+        display: none;
+    }
+    
+    #background-curso-3{
+        display: none;
+    }
+    
+    .curso-3 img{
+        display: none;
+    }
+    
+    .curso-3 span{
+        display: none;
+    }
+    
+    .curso-3 p{
+        display: none;
+    }
+    
+    #background-curso-4{
+        display: none;
+    }
+    
+    .curso-4 img{
+        display: none;
+    }
+    
+    .curso-4 span{
+        display: none;
+    }
+    
+    .curso-4 p{
+        display: none;
+    }
+    
+    #background-curso-5{
+        display: none;
+    }
+    
+    .curso-5 img{
+        display: none;
+    }
+    
+    .curso-5 span{
+        display: none;
+    }
+    
+    .curso-5 p{
+        display: none;
+    }
+    
+    .background-curso-6{
+        display: none;
+    }
+    
+    .curso-6 img{
+        display: none;
+    }
+    
+    .curso-6 span{
+        display: none;
+    }
+    
+    .curso-6 p{
+        display: none;
+    }
+    
+    #hr1 {
+        display: none;  
+    }
+
+}
+
+
+/*Mobile*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.mobile {
+    display: none;
+    margin-bottom: 10px;
+}
+
+#cursosespec-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+}
+
+#background-top-mobile{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 99%;
+    height: auto;
+    border-bottom: solid #006cb4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 3;
+}
+
+#volante-mobile {
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.Alerta-mobile p {
+    font-size: 3.6vh;
+    font-weight: bold;
+    color: #006cb4;
+}
+
+#background-mid-mobile {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    border-top: solid #006cb4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#Ob1-mobile {
+    font-size: 2vh;
+    font-weight: bold;
+    color: #006cb4;
+}
+
+#Content-mobile, .content-2-mobile, #content-3-mobile {
+    text-align: left;
+    font-size: 16px;
+}
+
+#background-mid2-mobile {
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 20px;
+    border: #006cb4 solid;
+    border-width: 1px;
+    background-color: #F8F9FA;
+    max-width: 100%;
+}
+
+.curso-1-mobile, .curso-3-mobile, .curso-4-mobile, .curso-5-mobile, .curso-6-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F9FA;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 620px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+.curso-1-mobile img, .curso-3-mobile img, .curso-4-mobile img, .curso-5-mobile img, .curso-6-mobile img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.curso-1-mobile p, .curso-3-mobile p, .curso-4-mobile p, .curso-5-mobile p, .curso-6-mobile p {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.curso-1-mobile span, .curso-3-mobile span, .curso-4-mobile span, .curso-5-mobile span, .curso-6-mobile span {
+    color: #006cb4;
+    font-weight: bold;
+}
+
+.background-footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.logos-footer, .sobre-footer, .contatos-footer {
+    flex: 1 1 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logos-footer a, .sobre-footer a, .contatos-footer a {
+    color: #003cff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.logos-footer a:hover, .sobre-footer a:hover, .contatos-footer a:hover {
+    text-decoration: underline;
+}
+
+#Sobre-destaque, #Contatosfooter {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #003cff;
+}
+
+.logos-footer i {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.copyright {
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #003cff;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, .navbar {
+    background-color: #060142;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.btn {
+    border: 1px solid white;
+}
+
+.logo {
+    margin-left: 32px;
+}
+
+#contraste {
+    margin-right: 10px;
+}
+
+#textocontraste {
+    color: white;
+    margin-left: 10px;
+    margin-right: 32px;
+    font-size: 14.4px;
+}
+
+.fas {
+    color: white;
+    margin-right: 2.88px;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+
+    .mobile {
+        display: block;
+    }
+
+    #background-top-mobile {
+        display: block;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .Alerta-mobile p {
+        display: block;
+        font-size: 3vh;
+    }
+
+    #background-mid-mobile {
+        display: block;
+        padding: 10px;
+    }
+
+    #background-mid2-mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .curso-1-mobile, .curso-3-mobile, .curso-4-mobile, .curso-5-mobile, .curso-6-mobile {
+        display: block;
+        max-width: 100%;
+        margin: 10px auto;
     }
 }
