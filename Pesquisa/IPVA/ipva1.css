@@ -1,0 +1,129 @@
+/* Estilos Gerais */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header, .navbar {
+    background-color: #060142;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+#img-ipva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 32px;
+}
+
+#contraste {
+    margin-right: 10px;
+}
+
+#textocontraste {
+    color: white;
+    margin-left: 10px;
+    margin-right: 32px;
+    font-size: 14.4px;
+}
+
+.fas {
+    color: white;
+    margin-right: 2.88px;
+}
+
+/* Estilização do conteúdo */
+h1 {
+    color: #2b5797;
+}
+
+.highlight {
+    color: #2b5797;
+    background-color: #ffff00;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+        .navbar-nav {
+            text-align: center;
+        }
+    
+        .navbar-toggler {
+            margin-left: auto;
+            margin-right: 10px;
+        }
+    
+        #navbar-links {
+            margin-top: 0;
+            flex-direction: column;
+        }
+    
+        .nav-item {
+            margin: 5px 0;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .navbar-brand {
+            margin-bottom: 10px;
+        }
+    
+        #navbar-links {
+            justify-content: flex-start;
+        }
+    
+        .trilho {
+            margin-top: 10px;
+            margin-left: 2rem;
+        }
+    
+        #NKlogo, #NKlogo-dark {
+            width: 90px;
+        }
+    }
+    #ipva-cont {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+@media (max-width: 576px) {
+    #textocontraste {
+        font-size: 12px;
+    }
+
+    .fas {
+        margin-right: 1.44px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #ipva-cont {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+    #ipva-img {
+        margin-top: 5rem;
+        flex-direction: column; 
+    }
+}

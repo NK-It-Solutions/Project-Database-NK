@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css"  href="consulta1.css">
-    <link rel="stylesheet" type="text/css"  href="footer.css">
+    <link rel="stylesheet" type="text/css"  href="footer1.css">
     <script defer src="consulta.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,9 +34,9 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbar-links">
               
             </div>
-            <div id="acessibilidade">
+            <div class="trilho" id="trilho">
                 <span>
-                    <a href="#" id="contraste"><i class="fas fa-adjust"></i><span id="textocontraste">Alto Contraste</span></a>
+                    <a id="contraste"><i class="fas fa-adjust"></i><span id="textocontraste">Alto Contraste</span></a>
                 </span>
             </div>
         </nav>
@@ -71,34 +71,39 @@
 
 </div>
 
-
-<footer>
-    <!-- footer site detran-->
-    <div class="background-footer">
-        <div class="logos-footer">
-            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+<section id="Contatos">
+    <footer>
+        <div class="background-footer">
+            <div class="logos-footer">
+                <a href="https://www.instagram.com/fotografia.cauaamaral/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/leandro-melo-4656032b6/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/NK-It-Solutions" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+            <div class="sobre-footer">
+                <p id="Sobre-destaque">Sobre a NK Solutions:</p>
+                <a href="https://chat.whatsapp.com/InKndskXwFOL21TIdmgiwo">Consultoria</a>
+                <a href="https://chat.whatsapp.com/InKndskXwFOL21TIdmgiwo">Serviços Web</a>
+                <a href="https://chat.whatsapp.com/InKndskXwFOL21TIdmgiwo">Banco de dados</a>
+                <a href="https://chat.whatsapp.com/InKndskXwFOL21TIdmgiwo">Aplicações</a>
+            </div>
+            <div class="contatos-footer">
+                <p id="Contatosfooter">Contatos</p>
+                <a href="mailto:contatoNKSolutions@gmail.com" target="_blank" class="footercontatos" id="email">
+                        <i class="fa fa-envelope" style="font-size: 1.3em;"></i> <span id="emailcontato"> NKsolutions_@outlook.com</span></a>
+                    <a href="https://chat.whatsapp.com/Bsa2g0ijhYR3rgc9xbQop3" target="_blank" class="footercontatos" id="whatsappcontato">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1.3em;"></i> <span id="wpptexto">+55 81 99646-4232</span> </a>
+                    <a class="footercontatosNB" id="telefone">
+                        <i class="fa fa-phone" style="font-size: 1.3em;"></i> <span id="telefonecontato">+55 81 3251-2381</span></a>
+                    <a href="mailto:HelpNKSolutions@gmail.com" target="_blank" class="footercontatos" id="ajudamobile">
+                        <i class="fa fa-envelope" style="font-size: 1.3em;"></i> <span id="ajudamobilecontato">HelpNKSolutions@gmail.com</span></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; NK Solutions</p>
+            </div>
         </div>
-        <div class="sobre-footer">
-            <p id="Sobre-destaque">Sobre a Nk:</p>
-            <a href="#">Consultoria</a>
-            <a href="#">Serviços Web</a>
-            <a href="#">Banco de dados</a>
-            <a href="#">Aplicações</a>
-        </div>
-        <div class="contatos-footer">
-            <p id="Contatosfooter">Contatos</p>
-            <a href="#">NKsolutions_@outlook.com</a>
-            <a href="#">NKsupport@gmail.com</a>
-        </div>
-        <div class="copyright">
-            <p>Copyright &copy; NK It Solutions</p>
-        </div>
-    </div>
-</footer>
-
+    </footer>
+</section>
 
 <!--Scripts-->
 

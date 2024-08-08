@@ -231,27 +231,35 @@ span {
 }
 
 body.dark .background-footer {
-    background-color: rgb(0, 0, 0);
+    border-top: 4px solid orangered;
 }
 
-body.dark .logos-footer-color {
+body.dark .background-footer {
+    background-color: rgb(15, 14, 14);
+}
+
+body.dark .logos-footer a{
     color: orangered;
 }
 
-body.dark #Sobre-destaque {
+body.dark .sobre-footer a {
     color: orangered;
 }
 
-body.dark #Contatosfooter {
+body.dark .sobre-footer #Sobre-destaque {
+    color: rgb(255, 152, 114);
+}
+
+body.dark .contatos-footer a {
     color: orangered;
+}
+
+body.dark .contatos-footer #Contatosfooter {
+    color: rgb(255, 152, 114);
 }
 
 body.dark .copyright {
-    color: orangered;
-}
-
-body.dark .sobre-footer-color {
-    color: white;
+    color: rgb(255, 152, 114);
 }
 
 .copyright {

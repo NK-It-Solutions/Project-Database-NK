@@ -124,7 +124,7 @@ body.dark #background-mid {
 }
 
 body.dark #background-mid p {
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 
 body.dark #background-mid p1 {
@@ -152,7 +152,7 @@ body.dark #background-curso-3 {
 }
 
 body.dark #texto {
-    color: white;
+    color: #ffffff;
 }
 
 body.dark .background-footer {
@@ -179,9 +179,53 @@ body.dark .sobre-footer-color {
     color: white;
 }
 
+body.dark .card {
+    color: #ffffff;
+}
+
 body.dark .card-mobile {
     color: black;
 }
+
+body.dark #Content p  {
+    color: #ffffff;
+}
+
+body.dark #atendimento-presencial a {
+    color: orangered;
+}
+
+body.dark #Content #Ob1 {
+    color: orangered;
+}
+
+body.dark p #Ob1-3  {
+    color: orangered
+}
+
+
+body.dark #Ob1-3 a {
+    color: orangered
+}
+body.dark #Ob1-3 p {
+    color: orangered
+}
+
+body.dark #Ob2-2 a {
+    color: orangered;
+}
+
+body.dark #Content-2 #Ob2-1  {
+    color: orangered;
+}
+
+
+
+body.dark #Ob3-2 a {
+    color: #ffffff;
+}
+
+
 
 #background-top{
     margin-top: 2rem;
@@ -209,7 +253,7 @@ body.dark .card-mobile {
     margin-top: 12px;
     margin-left: 30px;
     font-weight: bold;
-    color: #ffff62;
+    color: #e8e808;
 }
 
 .Alerta{
@@ -262,11 +306,22 @@ body.dark .card-mobile {
     color: #ffffff;
 }
 
+body.dark #Ob1-2{
+    background-color: #000000;
+    color: orangered;
+}
+
 #Ob1-3{
     font-size: 13px;
     text-align: center;
     border: 1px solid #b40000;
     border-top: none;
+}
+
+body.dark #Ob1-3{
+    background-color: #000000;
+    border: 1px solid orangered;
+    color: orangered;
 }
 
 .Content-2{
@@ -304,12 +359,33 @@ body.dark .card-mobile {
     color: #ffffff;
 }
 
+body.dark #Ob2-3{
+    background-color: #000000;
+    border: 1px solid orangered;
+    color: #ffffff;
+}
+
+
 #Ob2-4{
     font-size: 13px;
     text-align: center;
     border: #b40000 solid 1px;
     border-top: none;
     padding-right: 5px;
+}
+
+body.dark #Ob2-4{
+    background-color: #000000;
+    border: orangered solid 1px;
+    color: #ffffff;
+}
+
+body.dark #Content-3 p {
+    color: #ffffff;
+}
+
+body.dark #Content-3 #Ob3-1 {
+    color: orangered;
 }
 
 .Content-3{
@@ -342,6 +418,175 @@ body.dark .card-mobile {
 
 
 /*mobile*/
+
+body.dark #others-title-mobile {
+    color: orangered;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+body.dark span {
+    color: orangered;
+}
+
+body.dark #golpe-title-mobile  {
+    color: orangered;
+}
+
+body.dark main {
+    background-color: black;
+}
+
+body.dark #others-mobile  {
+    background-color: black;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+body.dark #textobugadodokrlvsf {
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+body.dark .background-faq-mobile  {
+    border-top : 5px solid orangered;
+    border-bottom : 5px solid orangered;
+}
+
+body.dark #background-top-mobile {
+    border : 2px solid orangered;
+    background-color: black;
+
+}
+
+body.dark .Alerta-mobile  p {
+    color: orangered;
+}
+
+body.dark #background-mid-mobile  {
+    border: 2px solid orangered;
+    background-color: black;
+}
+
+body.dark #background-mid-mobile  p {
+    color: orangered;
+}
+
+body.dark #background-mid-mobile  p1 {
+    color: rgb(0, 0, 0);
+}
+
+body.dark #background-curso-1-mobile  {
+    background-color: black;
+}
+
+body.dark #background-curso-3-mobile  {
+    background-color: black;
+}
+
+body.dark #background-curso-4-mobile  {
+    background-color: black;
+}
+
+body.dark #background-curso-5-mobile  {
+    background-color: black;
+}
+
+body.dark #background-curso-3-mobile  {
+    background-color: black;
+}
+
+body.dark #texto-mobile  {
+    color: orangered;
+}
+
+body.dark #atendimento-presencial-mobile {
+   background-color: #000000;
+}
+
+body.dark #Content-mobile {
+    background-color: #000000;
+}
+
+body.dark #Ob1-3-mobile {
+    background-color: #000000;
+}
+
+body.dark #Ob1-3-mobile p {
+    color: #fff;
+}
+
+body.dark .card-mobile {
+    background-color: #000000;
+}
+
+body.dark #Ob1-2-mobile {
+    background-color: #000000;
+}
+
+body.dark #Content-2-mobile {
+    background-color: #000000;
+}
+
+body.dark #Ob2-1-mobile {
+    color: orangered;
+}
+
+body.dark #Ob2-2-mobile a {
+    color: orangered;
+}
+
+body.dark #Ob2-2-mobile{
+    color: #fff;
+}
+
+body.dark #Ob2-4-mobile {
+    color: orangered;
+}
+
+body.dark #Ob2-3-mobile {
+    color: orangered;
+    background-color: #000000 ;
+}
+
+body.dark #Content-3-mobile {
+    background-color: #000000;
+}
+
+body.dark #Ob3-1-mobile {
+    background-color: #000000;
+    color: orangered;
+}
+
+body.dark #Ob3-2-mobile {
+    color: #fff;
+}
+
+body.dark #Ob3-2-mobile a {
+    color: orangered;
+}
+
+body.dark .background-footer {
+    border-top: 4px solid orangered;
+}
+
+body.dark #atendimento-presencial-mobile a {
+    color: orangered;
+}
+
+
+body.dark #Ob1-3-mobile a {
+    color: #ffffff;
+}
+
+body.dark #Content-mobile #Ob1-mobile {
+    color: orangered;
+}
+
+
+
 
 #atendimento-presencial-mobile {
     justify-content: center;
@@ -449,6 +694,10 @@ body.dark .card-mobile {
 
     .card-mobile {
         padding: 10px;
+    }
+
+    #volante {
+        display: none;
     }
 
 }

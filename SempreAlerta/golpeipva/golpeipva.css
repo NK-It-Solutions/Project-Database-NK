@@ -65,6 +65,7 @@ header, .navbar {
     align-items: center;
     box-shadow: 0 3px 6px #00000029;
     text-align: center;
+    border-bottom: 4px solid blue;
 }
 
 #NKlogo {
@@ -178,12 +179,37 @@ header, .navbar {
 /*dark mode*/
 
 body.dark .background-footer {
-    background-color: rgb(0, 0, 0);
+    border-top: 4px solid orangered;
 }
 
-body.dark .logos-footer-color {
+body.dark .background-footer {
+    background-color: rgb(15, 14, 14);
+}
+
+body.dark .logos-footer a{
     color: orangered;
 }
+
+body.dark .sobre-footer a {
+    color: orangered;
+}
+
+body.dark .sobre-footer #Sobre-destaque {
+    color: rgb(255, 152, 114);
+}
+
+body.dark .contatos-footer a {
+    color: orangered;
+}
+
+body.dark .contatos-footer #Contatosfooter {
+    color: rgb(255, 152, 114);
+}
+
+body.dark .copyright {
+    color: rgb(255, 152, 114);
+}
+
 
 body.dark #Sobre-destaque {
     color: orangered;
@@ -197,17 +223,7 @@ body.dark ul {
     margin-bottom: 0px;
 }
 
-body.dark #Contatosfooter {
-    color: orangered;
-}
 
-body.dark .copyright {
-    color: orangered;
-}
-
-body.dark .sobre-footer-color {
-    color: white;
-}
 
 .trilho.dark #textocontraste {
     color: white;
@@ -223,6 +239,7 @@ body.dark {
 
 body.dark .navbar{
     background-color: black;
+    border-bottom: 4px solid orangered;
 }
 
 body.dark .my-5 {
@@ -276,6 +293,7 @@ body.dark .background-faq {
 }
 
 .background-footer {
+    border-top: 4px solid blue;
     display: flex;
     flex-wrap: wrap;
     background-color: aliceblue;

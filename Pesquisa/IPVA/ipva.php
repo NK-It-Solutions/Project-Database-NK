@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css"  href="ipva.css">
+    <link rel="stylesheet" type="text/css"  href="ipva1.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -36,91 +36,10 @@
         <p>Pessoas com deficiência e donos de carros com motores unicamente elétricos são isentos de IPVA em <span class="highlight">Pernambuco</span>.</p>
         
         <h2>Calendário IPVA 2024 em Pernambuco</h2>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Final da placa</th>
-                    <th>Cota Única ou 1ª parcela</th>
-                    <th>2ª parcela</th>
-                    <th>3ª parcela</th>
-                    <th>4ª parcela</th>
-                    <th id="virada">5ª parcela</th>
-                    <th>6ª parcela</th>
-                    <th>7ª parcela</th>
-                    <th>8ª parcela</th>
-                    <th>9ª parcela</th>
-                    <th>10ª parcela</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1 e 2</td>
-                    <td>5 de fevereiro</td>
-                    <td>5 de março</td>
-                    <td>5 de abril</td>
-                    <td>5 de maio</td>
-                    <td id="virada">5 de junho</td>
-                    <td>5 de julho</td>
-                    <td>5 de agosto</td>
-                    <td>5 de setembro</td>
-                    <td>5 de outubro</td>
-                    <td>5 de novembro</td>
-                </tr>
-                <tr>
-                    <td>3 e 4</td>
-                    <td>10 de fevereiro</td>
-                    <td>10 de março</td>
-                    <td>10 de abril</td>
-                    <td>10 de maio</td>
-                    <td id="virada">10 de junho</td>
-                    <td>10 de julho</td>
-                    <td>10 de agosto</td>
-                    <td>10 de setembro</td>
-                    <td>10 de outubro</td>
-                    <td>10 de novembro</td>
-                </tr>
-                <tr>
-                    <td>5 e 6</td>
-                    <td>15 de fevereiro</td>
-                    <td>15 de março</td>
-                    <td>15 de abril</td>
-                    <td>15 de maio</td>
-                    <td id="virada">15 de junho</td>
-                    <td>15 de julho</td>
-                    <td>15 de agosto</td>
-                    <td>15 de setembro</td>
-                    <td>15 de outubro</td>
-                    <td>15 de novembro</td>
-                </tr>
-                <tr>
-                    <td>7 e 8</td>
-                    <td>20 de fevereiro</td>
-                    <td>20 de março</td>
-                    <td>20 de abril</td>
-                    <td>20 de maio</td>
-                    <td id="virada">20 de junho</td>
-                    <td>20 de julho</td>
-                    <td>20 de agosto</td>
-                    <td>20 de setembro</td>
-                    <td>20 de outubro</td>
-                    <td>20 de novembro</td>
-                </tr>
-                <tr>
-                    <td>9 e 0</td>
-                    <td>25 de fevereiro</td>
-                    <td>25 de março</td>
-                    <td>25 de abril</td>
-                    <td>25 de maio</td>
-                    <td id="virada">25 de junho</td>
-                    <td>25 de julho</td>
-                    <td>25 de agosto</td>
-                    <td>25 de setembro</td>
-                    <td>25 de outubro</td>
-                    <td>25 de novembro</td>
-                </tr>
-            </tbody>
-        </table>
+    </div>
+
+    <div class="container" id="img-ipva">
+            <img class="img-fluid" src="https://i.postimg.cc/L5Jhg5Kh/calendario-licenciamento-2024-cleanup.png" alt="calendário do IPVA">
     </div>
 
     <section id="Contatos">

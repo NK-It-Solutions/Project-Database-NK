@@ -16,7 +16,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 #registrar-carro {
@@ -191,6 +191,57 @@ a {
     justify-content: left;
 }
 
+
+#ConsultaCNH-mobile {
+    display: none;
+
+}
+
+.consulta-container-mobile{
+    background-color: #fff;
+    border: 1px solid rgb(245, 225, 225);
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#registrar-carro-mobile {
+    margin-top: 2rem;
+}
+
+#sobre-legis-mobile {
+    margin-top: 2rem;
+}
+
+#legis-btn-mobile i {
+    font-size: 35px;
+}
+
+#acc-btn-mobile button,
+#vei-btn-mobile button {
+    background-color: #006cb4;
+    color: #fff;
+    width: 100%;
+    max-width: 15rem;
+    border-radius: 15px;
+    border: none;
+    height: 2rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#acc-btn-mobile button {
+    background-color: #972800;
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     #services{
@@ -200,6 +251,43 @@ a {
 
 
 @media (max-width: 768px) {
+    #ConsultaCNH {
+        display: none;
+        
+    }
+
+    #ConsultaCNH-mobile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 20px auto;
+        align-items: center;
+    }
+
+    .consulta-container-mobile {
+        width: 30%;
+        margin-top: 0;
+        margin-left: 0;
+        background-color: #fff;
+        border: 1px solid rgb(245, 225, 225);
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        text-align: center;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #registrar-carro-mobile,
+    #sobre-legis-mobile {
+        margin-top: 10px;
+    }
     .container-serv {
         padding: 0.5rem;
         margin-top: 2rem; 
@@ -223,7 +311,7 @@ a {
     #cardicon {
         font-size: 35px; 
     }
-}
+
 
 @media (max-width: 576px) {
     .tab-buttons button {
@@ -240,4 +328,5 @@ a {
     #cardicon {
         font-size: 30px; 
     }
+}
 }

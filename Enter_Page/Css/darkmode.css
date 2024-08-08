@@ -136,6 +136,19 @@ body.dark .consulta-container p{
     color: orangered;
 }
 
+body.dark .consulta-container-mobile {
+    background-color: black;
+    border: 1px solid orangered;
+}    
+
+body.dark .consulta-container-mobile h2{
+    color: orangered;
+}
+
+body.dark .consulta-container-mobile p{
+    color: orangered;
+}
+
 body.dark .content-wrapper .content-title.not-registered {
     color: orangered;
 }
