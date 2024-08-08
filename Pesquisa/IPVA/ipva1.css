@@ -4,7 +4,6 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
 }
 
 header, .navbar {
@@ -127,3 +126,44 @@ h1 {
         flex-direction: column; 
     }
 }
+
+
+/*dark mode*/
+body.dark header {
+    border-bottom: 2px solid orangered;
+    background-color: rgb(15, 14, 14);
+}
+
+body.dark {
+    background-color: black;
+}
+
+body.dark .navbar{
+    background-color: rgb(15, 14, 14);
+}
+
+body.dark .background-footer {
+    border-top-color: orangered;
+}
+
+body.dark #img-ipva {
+    background-color: black;
+}
+
+body.dark h1 {
+    color: orangered;
+}
+
+body.dark h2 {
+    color: orangered;
+}
+
+body.dark p {
+    color: #fff;
+}
+
+body.dark .highlight {
+    color: orangered;
+    background-color: black
+}
+

@@ -60,6 +60,38 @@
     color: #003cff;
 }
 
+body.dark .background-footer {
+    border-top: 4px solid orangered;
+}
+
+body.dark .background-footer {
+    background-color: rgb(15, 14, 14);
+}
+
+body.dark .logos-footer a{
+    color: orangered;
+}
+
+body.dark .sobre-footer a {
+    color: orangered;
+}
+
+body.dark .sobre-footer #Sobre-destaque {
+    color: rgb(255, 152, 114);
+}
+
+body.dark .contatos-footer a {
+    color: orangered;
+}
+
+body.dark .contatos-footer #Contatosfooter {
+    color: rgb(255, 152, 114);
+}
+
+body.dark .copyright {
+    color: rgb(255, 152, 114);
+}
+
 /* Responsivo para telas menores */
 @media (max-width: 768px) {
     .background-footer {
