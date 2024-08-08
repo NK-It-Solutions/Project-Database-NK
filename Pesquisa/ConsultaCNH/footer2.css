@@ -7,7 +7,8 @@
 }
 
 .background-footer {
-    border-top: 4px solid #003cff;
+    border-top: 4px solid;
+    border-image: linear-gradient(45deg, red, yellow, green, blue) 1;
     display: flex;
     flex-wrap: wrap;
     background-color: aliceblue;
@@ -61,10 +62,6 @@
 }
 
 /*dark footer*/
-
-body.dark .background-footer {
-    border-top: 4px solid orangered;
-}
 
 body.dark .background-footer {
     background-color: rgb(15, 14, 14);

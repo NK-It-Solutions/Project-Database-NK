@@ -7,6 +7,8 @@ body, html {
 }
 
 header, .navbar {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(45deg, red, yellow, green, blue) 1; 
     background-color: #060142;
     height: 10vh;
     display: flex;
@@ -130,7 +132,6 @@ h1 {
 
 /*dark mode*/
 body.dark header {
-    border-bottom: 2px solid orangered;
     background-color: rgb(15, 14, 14);
 }
 
@@ -140,10 +141,6 @@ body.dark {
 
 body.dark .navbar{
     background-color: rgb(15, 14, 14);
-}
-
-body.dark .background-footer {
-    border-top-color: orangered;
 }
 
 body.dark #img-ipva {

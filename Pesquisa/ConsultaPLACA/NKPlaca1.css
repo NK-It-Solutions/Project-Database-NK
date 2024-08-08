@@ -58,6 +58,7 @@ body.dark .background-image {
     background-image: none;
 }
 
+
 .container {
     padding: 70px 15px;
 }
@@ -68,6 +69,8 @@ body.dark .background-image {
 }
 
 header, .navbar {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(45deg, red, yellow, green, blue) 1; 
     background-color: #060142;
     display: flex;
     align-items: center;
@@ -133,12 +136,14 @@ header, .navbar {
     margin-right: 2.88px;
 }
 
+
+
 /* Background e Seções */
 .background-image {
     border-radius: 2px;
     box-shadow: 0 0 0px;
     background-size: cover;
-    background-image: url(https://setcesp.org.br/wp-content/uploads/2019/08/motorista.jpg);
+    background-image: url(https://www.trisul-sa.com.br/blog/wp-content/uploads/2020/01/transito-em-sao-paulo.jpeg);
     background-position: center;
     height: 100vh;
     display: flex;
@@ -155,7 +160,8 @@ header, .navbar {
     border-radius: 30px;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    height: 50vh;
+    height: 45vh;
+    
 }
 
 #consulta-container p {
@@ -166,19 +172,12 @@ header, .navbar {
 body.dark #consulta-container {
     background-color: black;
     border: 2px solid orangered;
-    padding-bottom: 420px;
 }
 
 body.dark #consulta-container p {
     color: white;
     text-align: center;
     flex-wrap: wrap;
-}
-
-.consulta-title {
-    border-bottom: 3px solid #003cff;
-    text-align: center;
-    color: #003cff;
 }
 
 body.dark .consulta-title {
@@ -188,6 +187,21 @@ body.dark .consulta-title {
 
 body.dark label {
     color: white;
+}
+
+body.dark input {
+    border-color: orangered;
+}
+
+body.dark #consult {
+    background-color: black;
+    color: orangered;
+}
+
+.consulta-title {
+    border-bottom: 3px solid #003cff;
+    text-align: center;
+    color: #003cff;
 }
 
 .registrados p {
@@ -216,17 +230,8 @@ input {
     border-color: #003cff;
 }
 
-body.dark input {
-    border-color: orangered;
-}
-
 #consult {
     background-color: #2956e9;
-}
-
-body.dark #consult {
-    background-color: black;
-    color: orangered;
 }
 
 /* Resultados */
@@ -236,13 +241,15 @@ body.dark #consult {
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
-    margin-left: 0; /* Ajustado para evitar deslocamento negativo */
+    margin-left: 0;
+    
 }
 
 #resultado-consulta {
     position: relative;
     z-index: 3;
 }
+
 /* Registros */
 .record {
     display: flex;
@@ -257,12 +264,12 @@ body.dark #consult {
     
 }
 
-.nomecnh {
-    font-size: 1.3em;
+.placa {
+    font-size: 1.2em;
     color: #bd1010;
 }
 
-.record .telefone {
+.record .marca {
     color: #09f009;
 }
 
@@ -285,7 +292,6 @@ body.dark #consult {
     #consulta-container {
         width: 100%;
         padding: 15px;
-        height: 60vh;
     }
 
     .consulta-title {
@@ -297,30 +303,71 @@ body.dark #consult {
     }
 
     #resultado-container {
-        margin-left: -11rem;
+        padding-left: 15rem;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
+    #consulta-container {
+        width: 300px;
+        padding: 15px;
+        height: 55vh;
+    }
+
+    .consulta-title {
+        font-size: 1.5em;
+    }
+
+    .registrados p, form, label{
+        font-size: 21px;
+    }
+
+    input {
+        font-size: 15px;
+    }
+
+
+    #resultado-container {
+        margin-top: 3.5rem;
+        padding-right: 6rem;
+    }
+}
+
+@media (max-height: 820px) {
+    #consulta-container {
+        width: 300px;
+        padding: 15px;
+        height: 65vh;
+        width: 50vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    #consulta-container {
+        width: 300px;
+        padding: 15px;
+        height: 90vh;
+        width: 60vh;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 800px) {
     #consulta-container {
         width: 300px;
         padding: 15px;
         height: 60vh;
-    }
-
-    .consulta-title {
-        font-size: 1.5em;
-    }
-
-    .registrados p, form, label, input {
-        font-size: 18px;
-    }
-
-    #resultado-container {
-        margin-left: -11rem;
+        width: 60vh;
     }
 }
 
+@media (min-width: 1440px) and (min-height: 800px) {
+    #consulta-container {
+        width: 300px;
+        padding: 15px;
+        height: 60vh;
+        width: 60vh;
+    }
+}
 
 @media (max-width: 576px) {
     #NKlogo {
@@ -336,8 +383,12 @@ body.dark #consult {
         font-size: 1.2em;
     }
 
-    .registrados p, form, label, input {
+    .registrados p, form, label{
         font-size: 16px;
+    }
+
+    input {
+        font-size: 20px;
     }
 
     .record {
@@ -359,4 +410,3 @@ body.dark #consult {
     }
     
 }
-

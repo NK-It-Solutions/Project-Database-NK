@@ -14,7 +14,8 @@ a {
 }
 
 header, .navbar {
-    border-bottom: 4px solid blue;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(45deg, red, yellow, green, blue) 1; 
     background-color: #060142;
     height: 10vh;
     display: flex;

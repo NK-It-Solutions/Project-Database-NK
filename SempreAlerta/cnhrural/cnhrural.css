@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap');
 
 /* Estilos Gerais */
 body, html {
-    height: 100%;
-    font-family: "Poppins" , sans-serif;
+    font-family: "Zain" , sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins" , sans-serif;
     text-decoration: none;
     list-style: none;
 }
@@ -16,8 +14,12 @@ body, html {
     margin-left: 32px;
 }
 
+.navbar  {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(45deg, red, yellow, green, blue) 1; 
+}
 .container {
-    padding: 70px 15px;
+    padding: 0px 15px;
 }
 
 .trilho {
@@ -117,9 +119,6 @@ header, .navbar {
 /*projeto*/
 
 
-section {
-    margin-bottom: 30px;
-}
 
 h2 {
     color: #0056b3;
@@ -127,7 +126,7 @@ h2 {
 }
 
 p {
-    margin-bottom: 15px;
+    
     line-height: 1.6;
 }
 
@@ -191,11 +190,12 @@ figcaption {
 * {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
 }
 
 .background-footer {
     display: flex;
+    border-top: 4px solid;
+    border-image: linear-gradient(45deg, red, yellow, green, blue) 1;
     flex-wrap: wrap;
     background-color: aliceblue;
     padding: 20px;

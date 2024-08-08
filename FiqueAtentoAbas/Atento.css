@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap');
 
 /* Press F for GordaoXJ*/
 
@@ -8,7 +8,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family:"Poppins", sans-serif;;
+    font-family:"Zain", sans-serif;;
 }
 main {
     margin-bottom: 10px;
@@ -386,6 +386,8 @@ body.dark .sobre-footer-color {
 }
 
 .background-footer {
+    border-top: 4px solid;
+    border-image: linear-gradient(45deg, red, yellow, green, blue) 1;
     display: flex;
     flex-wrap: wrap;
     background-color: aliceblue;
@@ -436,6 +438,8 @@ a {
 }
 
 header, .navbar {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(45deg, red, yellow, green, blue) 1; 
     background-color: #060142;
     height: 10vh;
     display: flex;
@@ -661,7 +665,6 @@ header, .navbar {
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: "Poppins", sans-serif;
 }
 
 .mobile {
@@ -844,6 +847,35 @@ header, .navbar {
 .fas {
     color: white;
     margin-right: 2.88px;
+}
+
+body.dark #background-top-mobile {
+    background-color: black;
+    border-bottom: solid orangered;
+}
+
+body.dark .Alerta-mobile p {
+    color: orangered;
+}
+
+body.dark #background-mid-mobile {
+    border-top: solid orangered;
+}
+
+body.dark #Ob1-mobile {
+    color: orangered;
+}
+
+body.dark #Content-mobile p {
+    color: #fff;
+}
+
+body.dark #content-2-mobile p {
+    color: #fff;
+}
+
+body.dark #ob3-mobile {
+    color: orangered;
 }
 
 /* Responsivo para telas menores */
