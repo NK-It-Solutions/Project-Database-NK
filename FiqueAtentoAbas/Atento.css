@@ -101,6 +101,110 @@ main {
     position: absolute;
 }
 
+.trilho {
+    cursor: pointer;
+}
+
+.trilho.dark #textocontraste {
+    color: white;
+}
+
+.trilho.dark .fas {
+    color: white;
+}
+
+body.dark #ob-5 {
+    border-bottom-color: orangered;
+}
+
+body.dark {
+    background-color: black;
+}
+
+body.dark .navbar{
+    background-color: black;
+}
+
+body.dark .my-5 {
+    color: white;
+    background-color: black;
+}
+
+body.dark #others-title {
+    color: orangered;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+body.dark span {
+    color: orangered;
+}
+
+body.dark #golpe-title {
+    color: orangered;
+}
+
+body.dark main {
+    background-color: black;
+}
+
+body.dark #others {
+    background-color: black;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+body.dark #textobugadodokrlvsf {
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+body.dark .background-faq {
+    border-top : 5px solid orangered;
+    border-bottom : 5px solid orangered;
+}
+
+body.dark #background-top{
+    border : 2px solid orangered;
+    background-color: black;
+
+}
+
+body.dark .Alerta p {
+    color: orangered;
+}
+
+body.dark #background-mid {
+    border: 2px solid orangered;
+    background-color: black;
+}
+
+body.dark #background-mid p {
+    color: white;
+}
+
+body.dark #background-curso-1 {
+    background-color: black;
+}
+
+body.dark #background-curso-3 {
+    background-color: black;
+}
+
+body.dark #background-curso-4 {
+    background-color: black;
+}
+
+body.dark #background-curso-5 {
+    background-color: black;
+}
+
+body.dark #background-curso-3 {
+    background-color: black;
+}
+
 #ob-5{
     font-size: 2.5vh;
     font-weight: bold;
@@ -225,6 +329,42 @@ main {
     margin-top: 93rem;
     max-width: 460px;
     background-color: #F8F9FA
+}
+
+body.dark .background-curso-6{	
+    background-color: black;
+}
+
+body.dark #background-mid2 {
+    border: 1px solid orangered;
+}
+
+body.dark #text {
+    color: white;
+}
+
+body.dark .background-footer {
+    background-color: rgb(0, 0, 0);
+}
+
+body.dark .logos-footer-color {
+    color: orangered;
+}
+
+body.dark #Sobre-destaque {
+    color: orangered;
+}
+
+body.dark #Contatosfooter {
+    color: orangered;
+}
+
+body.dark .copyright {
+    color: orangered;
+}
+
+body.dark .sobre-footer-color {
+    color: white;
 }
 
 .curso-6 img{
