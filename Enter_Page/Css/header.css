@@ -1,5 +1,6 @@
 header {
-    border-bottom:4px solid #003cff;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(45deg, red, yellow, green, blue) 1; 
 }
 
 
@@ -22,6 +23,7 @@ header, .navbar {
 #nav-container {
     padding-top: 0;
     padding-bottom: 0;
+
 }
 
 #NKlogo {

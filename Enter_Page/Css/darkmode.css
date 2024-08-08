@@ -7,7 +7,8 @@
 }
 
 body.dark header {
-    border-bottom: 2px solid orangered;
+    border-bottom: 4px solid orangered;
+    border-color: transparent;
     background-color: rgb(15, 14, 14);
 }
 
