@@ -23,7 +23,7 @@
 <header>
     <div class="container" id="nav-container">
         <nav class="navbar navbar-expand-lg fixed-top">
-            <a href="http://localhost/project/Enter_Page/NKindex.php" class="navbar-brand">
+            <a href="http://localhost/Project/Project-Database-NK/Enter_Page/NKindex.php" class="navbar-brand">
                 <img id="NKlogo" src="https://i.ibb.co/pd3Byhr/Simplistic-Logo-Cinza.png" alt="Logo da empresa NK Solutions">
             </a>
 
@@ -51,7 +51,7 @@
                 <h2>CONSULTA DE CNH</h2>
             </div>
             <div class="registrados active" id="registradosContent">
-                <p>Quem possui veículo já registrado pelo NK pode obter as informações <br> necessárias para manter o veículo regularizado e também para realizar os <br> serviços de Comunicação de Venda ou Transferência de Propriedade.</p>
+                <p>Acompanhe o andamento de processos relativos a Veículos, Habilitação e Infrações, além de avisos sobre pendências e prazos.</p>
                 <form method="post" action="consulta.php" id="consultaForm">
                     <label for="cpf">CPF:</label>
                     <input type="text" id="cpf" name="cpf">

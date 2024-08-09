@@ -19,7 +19,7 @@
     <header>
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="/Project-Database-NK/Enter_Page/NKindex.html" class="logo">
+                <a href="http://localhost/Project/Project-Database-NK/Enter_Page/NKindex.php" class="logo">
                     <img src="https://i.ibb.co/pd3Byhr/Simplistic-Logo-Cinza.png" width="130px" height="45px" alt="Logo NK Solutions">
                 </a>
                 <div class="trilho" id="trilho">
@@ -52,10 +52,10 @@
        <h2 id="others-title">OUTROS COMUNICADOS</h2>
        <div class="card-container">
            <div class="card" id="others-card" style="width: 18rem;">
-               <a href="/xampp/htdocs/Project/Project-Database-NK/SempreAlerta/cnhrural/cnhrural.html"><img src="https://i.ibb.co/P9GMR9d/cnh-RURAL-2024-resultados-min-cleanup.png" class="card-img-top" alt="cnhrural"></a>
+               <a href="http://localhost/Project/Project-Database-NK/SempreAlerta/cnhrural/cnhrural.php"><img src="https://i.ibb.co/P9GMR9d/cnh-RURAL-2024-resultados-min-cleanup.png" class="card-img-top" alt="cnhrural"></a>
            </div>
            <div class="card" id="others-card" style="width: 18rem;">
-            <a href="/xampp/htdocs/Project/Project-Database-NK/SempreAlerta/golpeipva/golpeipva.html"><img src="https://i.ibb.co/k0P3j19/golpe-pagamentos-online-min.png" class="card-img-top" alt="cnhrural"></a>
+            <a href="http://localhost/Project/Project-Database-NK/SempreAlerta/golpeipva/golpeipva.php"><img src="https://i.ibb.co/k0P3j19/golpe-pagamentos-online-min.png" class="card-img-top" alt="cnhrural"></a>
            </div>
        </div>
    </section>

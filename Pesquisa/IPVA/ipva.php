@@ -18,7 +18,7 @@
     <header>
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="/Project-Database/Enter_Page/NKindex.html" class="logo">
+                <a href="http://localhost/Project/Project-Database-NK/Enter_Page/NKindex.php" class="logo">
                     <img src="https://i.ibb.co/pd3Byhr/Simplistic-Logo-Cinza.png" width="130px" height="45px" alt="Logo NK Solutions">
                 </a>
                 <div class="trilho" id="trilho">

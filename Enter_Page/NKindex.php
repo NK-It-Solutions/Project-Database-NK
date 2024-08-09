@@ -38,7 +38,7 @@
                 <div class="navbar-nav" id="navbar-itens">
                     <a href="#Noticias" class="nav-item nav-link" id="news-menu">Noticias</a>
                     <a href="#fique-atento" class="nav-item nav-link" id="alert-menu">Fique Atento</a>
-                    <a href="/xampp/htdocs/Project/Project-Database-NK/FAQ/faq.html" class="nav-item nav-link" id="faq-menu">Dúvidas frequentes</a>
+                    <a href="http://localhost/Project/Project-Database-NK/FAQ/faq.php" class="nav-item nav-link" id="faq-menu">Dúvidas frequentes</a>
                 </div>
             </div>
             <div class="trilho" id="trilho">
@@ -65,18 +65,18 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="\xampp\htdocs\Project\Project-Database-NK\SempreAlerta\golpeipva\golpeipva.html" target="_blank"> <img src="https://www.detran.pe.gov.br/images/2024/banner-principal/golpe-pagamentos-online-min.png#joomlaImage://local-images/2024/banner-principal/golpe-pagamentos-online-min.png?width=1140&height=300" class="d-block w-100" alt="Imagem 0 do Slider"></a>
+                    <a href="http://localhost/Project/Project-Database-NK/SempreAlerta/golpeipva/golpeipva.php" target="_blank"> <img src="https://www.detran.pe.gov.br/images/2024/banner-principal/golpe-pagamentos-online-min.png#joomlaImage://local-images/2024/banner-principal/golpe-pagamentos-online-min.png?width=1140&height=300" class="d-block w-100" alt="Imagem 0 do Slider"></a>
                 </div>
             
 
             
                 <div class="carousel-item">
-                    <a href="\xampp\htdocs\Project\Project-Database-NK\SempreAlerta\cnhrural\cnhrural.html" target="_blank"> <img src="https://i.ibb.co/8gjPgCq/cnh-rural-2024-resultado-min-cleanup.png" class="d-block w-100" alt="Imagem 1 do Slider"></a>
+                    <a href="http://localhost/Project/Project-Database-NK/SempreAlerta/cnhrural/cnhrural.php" target="_blank"> <img src="https://i.ibb.co/8gjPgCq/cnh-rural-2024-resultado-min-cleanup.png" class="d-block w-100" alt="Imagem 1 do Slider"></a>
                 </div>
             
 
                 <div class="carousel-item">
-                    <a href="\xampp\htdocs\Project\Project-Database-NK\SempreAlerta\ATPV\ATPV.html" target="_blank"> <img src="https://www.detran.pe.gov.br/images/2024/banner-principal/atpve-novoServico1.png#joomlaImage://local-images/2024/banner-principal/atpve-novoServico1.png?width=1140&height=300" class="d-block w-100" alt="Imagem 2 do Slider"></a>
+                    <a href="http://localhost/Project/Project-Database-NK/SempreAlerta/ATPV/ATPV.php" target="_blank"> <img src="https://www.detran.pe.gov.br/images/2024/banner-principal/atpve-novoServico1.png#joomlaImage://local-images/2024/banner-principal/atpve-novoServico1.png?width=1140&height=300" class="d-block w-100" alt="Imagem 2 do Slider"></a>
                 </div>
             
             </div>
@@ -343,7 +343,7 @@
         <h2>FIQUE ATENTO</h2>
     </div>
     <section id="fique-atento">
-        <a href="/xampp/htdocs/Project/Project-Database-NK/FiqueAtentoAbas/base.html" class="card blue">
+        <a href="http://localhost/Project/Project-Database-NK/FiqueAtentoAbas/base.php" class="card blue">
             <div class="card-header">
                 <i class="bi bi-display-fill"></i>
                 <span>Cursos</span>
@@ -362,7 +362,7 @@
             </div>
         </a>
     
-        <a href="/xampp/htdocs/Project/Project-Database-NK/FiqueAtentoAbas/indexo.html" class="card yellow">
+        <a href="http://localhost/Project/Project-Database-NK/FiqueAtentoAbas/indexo.php" class="card yellow">
             <div class="card-header">
                 <i class="bi bi-shield-shaded"></i>
                 <span>Fiscalização</span>

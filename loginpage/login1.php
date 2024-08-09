@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <header>
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="/Project-Database/Enter_Page/NKindex.html" class="logo">
+                <a href="http://localhost/Project/Project-Database-NK/Enter_Page/NKindex.php" class="logo">
                     <img src="https://i.ibb.co/pd3Byhr/Simplistic-Logo-Cinza.png" width="130px" height="45px" alt="Logo NK Solutions">
                 </a>
                 <div class="trilho" id="trilho">
@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <img class="img-fluid" src="https://i.ibb.co/jHZnGXQ/bglogin-jpg.png" alt="Background Login">
             </div>
             <main id="main-signin">
-                <form class="mx-lg-4" method="POST" action="login.php">
+                <form class="mx-lg-4" method="POST" action="login1.php">
                     <div class="card" id="logincpf">
                         <h3>Indentifique-se no sistema</h3>
                         <a id="textocpf1">

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -9,8 +9,8 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="golpeipva.css">
-        <script defer src="golpeipva.js"></script>
+        <link rel="stylesheet" href="cnhrural.css">
+        <script defer src="cnhrural.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" type="imagex/png" href="\xampp\htdocs\Project\Imagens\favicon.ico">
@@ -19,7 +19,7 @@
     <header>
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="/Project-Database-NK/Enter_Page/NKindex.html" class="logo">
+                <a href="http://localhost/Project/Project-Database-NK/Enter_Page/NKindex.php" class="logo">
                     <img src="https://i.ibb.co/pd3Byhr/Simplistic-Logo-Cinza.png" width="130px" height="45px" alt="Logo NK Solutions">
                 </a>
                 <div class="trilho" id="trilho">
@@ -37,31 +37,42 @@
     
         </div>
     
+        <div class="container">
+            <section class="project-info">
+                <h2>Entenda o projeto</h2>
+                <p>A <strong>Empresa NK Solutions</strong> está lançando o Programa CNH Rural, com o objetivo de possibilitar que agricultores e agricultoras familiares de Pernambuco realizem de forma gratuita todas as etapas do processo para obtenção da Carteira Nacional de Habilitação.</p>
+                <p>O CNH Rural contemplará os processos Primeira Habilitação, Renovação de CNH e Adição de Categoria da CNH.</p>
+                <figure>
+                    <img src="https://www.detran.pe.gov.br/images/img-moto-anistia-boi.png" alt="Trabalhadores rurais do Estado de Pernambuco serão beneficiados">
+                    <figcaption>Trabalhadores rurais do Estado de Pernambuco serão beneficiados</figcaption>
+                </figure>
+            </section>
+    
+            <section class="requirements">
+                <h2>Pré-requisitos</h2>
+                <ul>
+                    <li>Comprovar domicílio no estado de Pernambuco.</li>
+                    <li>Preencher os requisitos previstos pela legislação de trânsito.</li>
+                    <li>Possuir comprovante de Cadastro Nacional da Agricultura Familiar – CAF ou ser integrante de Unidade Familiar de Produção Agrária comprovável por meio de Declaração de Aptidão (DAP) ao Programa Nacional de Fortalecimento da Agricultura Familiar (Pronaf).</li>
+                    <li>Possuir CNH nas categorias A ou B, no caso de inscrição para Adição de Categoria.</li>
+                    <li>Possuir CNH nas categorias A, B ou AB, no caso de inscrição para Renovação de CNH.</li>
+                </ul>
+                <figure>
+                    <img src="https://www.detran.pe.gov.br/images/img-cnh-rural-trator.png" alt="O trabalhador do campo precisa cumprir os pré-requisitos listados">
+                    <figcaption>O trabalhador do campo precisa cumprir os pré-requisitos listados</figcaption>
+                </figure>
+            </section>
+        </div>
     
     </section>
-    
-     <main>
-         <h2 class="my-5 text-center" id="golpe-title">Golpe no pagamento do IPVA e outros tributos relativos ao veículo</h2>
-         <p class="my-5 text-center">Fique atento para as orientações abaixo e evite ser vítima de golpes na hora de pagar o IPVA e outros tributos relativos ao veículo:</p>
-         <div class="detran-list">
-                <ul class="lista-detran">
-                    <li>Não existe a opção de pagamento de IPVA via PIX. <br> </li>
-                    <li>Verifique se o número de contato é do NK (ele consta no rodapé do nosso site).</li> 
-                    <li>Nunca faça o pagamento do IPVA ou de qualquer outra taxa  do NK em sites que <br> tenham endereço eletrônico diferente do endereço do site oficial: www.NKsolutions.com </li>
-                    <li>Para não cair em nenhum golpe, só utilize os boletos gerados no site oficial: <br> www.NKsolutions.com, na Consulta de Placa com acesso via NKsolutions.com </li>
-                    <li>Quem pagar o IPVA ou taxas do NK gerados em sites que não sejam o site oficial da <br> empresa não terá como solicitar a restituição do valor pago indevidamente.</li>
-                </ul>
-            </div>       
-    </main>
-
     <section id="others">
         <h2 class="my-5 text-center">OUTROS COMUNICADOS</h2>
         <div class="card-container">
             <div class="card" id="others-card" style="width: 18rem;">
-                <a href="/xampp/htdocs/Project/Project-Database-NK/SempreAlerta/cnhrural/cnhrural.html"><img src="https://i.ibb.co/P9GMR9d/cnh-RURAL-2024-resultados-min-cleanup.png" class="card-img-top" alt="cnhrural"></a>
+                <a href="http://localhost/Project/Project-Database-NK/SempreAlerta/golpeipva/golpeipva.php"><img src="https://i.ibb.co/k0P3j19/golpe-pagamentos-online-min.png" class="card-img-top" alt="cnhrural"></a>
             </div>
             <div class="card" id="others-card" style="width: 18rem;">
-                <a href="/xampp/htdocs/Project/Project-Database-NK/SempreAlerta/ATPV/ATPV.html"><img src="https://i.ibb.co/6YqRpfz/servico-ATPV-cleanup.png" class="card-img-top" alt="ATPV"></a>
+                <a href="http://localhost/Project/Project-Database-NK/SempreAlerta/ATPV/ATPV.php"><img src="https://i.ibb.co/6YqRpfz/servico-ATPV-cleanup.png" class="card-img-top" alt="ATPV"></a>
             </div>
         </div>
     </section>
@@ -99,5 +110,4 @@
             </div>
         </footer>
     </section>
-</body>
-</html>
+    
