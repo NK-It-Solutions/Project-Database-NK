@@ -78,6 +78,7 @@ main {
 .content-2{
     padding-top: 17px ;
     font-size: 16px;
+    margin-right: 10rem;
 }
 
 #ob-3{
@@ -878,6 +879,22 @@ body.dark #ob3-mobile {
     color: orangered;
 }
 
+body.dark .content-2-mobile p {
+    color: #fff;
+}
+
+body.dark .content-2-mobile #ob-3-mobile {
+    color: orangered;
+}
+
+.content-2-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 /* Responsivo para telas menores */
 @media (max-width: 768px) {
 
@@ -913,4 +930,83 @@ body.dark #ob3-mobile {
         max-width: 100%;
         margin: 10px auto;
     }
+}
+
+body.dark #content-3-mobile p{
+    color: #fff;    
+}
+
+body.dark #content-3-mobile{
+    background-color: black;
+}
+
+body.dark #background-mid2-mobile{
+    background-color: black;
+    border-color: orangered 
+}
+
+
+
+body.dark .curso-3-mobile p{
+    color: white;
+}
+
+body.dark .curso-3-mobile{
+    background-color: black;
+}
+
+body.dark .curso-3-mobile{
+    color: white;
+}
+
+body.dark #br1{
+    color: white;
+}
+
+body.dark .curso-4-mobile{
+    background-color: black;
+}
+
+body.dark .curso-4-mobile p{
+    color: white;
+}
+
+body.dark .curso-4-mobile{
+    color: white;
+}
+
+body.dark .curso-5-mobile{
+    background-color: black;
+}
+
+body.dark .curso-5-mobile p{
+    color: white;
+}
+
+body.dark .curso-5-mobile{
+    color: white;
+}
+
+body.dark .curso-6-mobile{
+    background-color: black;
+}
+
+body.dark .curso-6-mobile p{
+    color: white;
+}
+
+body.dark .curso-6-mobile{
+    color: white;
+}
+
+body.dark .curso-1-mobile{
+    background-color: black;
+}
+
+body.dark .curso-1-mobile p{
+    color: white;
+}
+
+body.dark .curso-1-mobile{
+    color: white;
 }
