@@ -93,10 +93,6 @@
     margin-left: 1rem;
 }
 
-#follow-insta {
-  border: 5px solid; 
-  border-image: linear-gradient(45deg, red, yellow, green, blue) 1; 
-}
 
 /* From Uiverse.io by vinodjangid07 */ 
 .loader {

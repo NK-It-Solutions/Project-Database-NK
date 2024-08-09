@@ -362,3 +362,18 @@ body.dark #consult {
     
 }
 
+.no-results {
+    color: #555;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.no-results i {
+    color: #ff6b6b;
+    margin-right: 8px;
+}

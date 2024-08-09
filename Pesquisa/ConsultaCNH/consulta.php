@@ -162,8 +162,12 @@
     
     </body>
     </html>
+
     
-    <?php
+</body>
+</html>
+
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost";
     $username = "root"; 
@@ -198,7 +202,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         while($row = $result->fetch_assoc()) {
             echo '<script>
             var record = \'<div id="lembro-' . $row["cnhid"] . '" class="record">\';
-            record += \'<div class="nomecnh">Nome: ' . $row["nome"] . '<br></div>\';
+            record += \'<div class="nomecnh"><strong>Nome:<strong/> ' . $row["nome"] . '<br></div>\';
             record += \'<div class="telefone">telefone: ' . $row["telefone"] . '<br></div>\';
             record += \'<div class="n_regis">N. de Registro: ' . $row["n_registro"] . '<br></div>\';
             record += \'<div class="CEP_CNH">CEP: ' . $row["cep"] . '<br></div>\';
@@ -211,12 +215,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </script>';
         }
     } else {
-        echo "<script>document.getElementById('resultado-container').innerHTML = '0 resultados';</script>";
+        echo '<script>
+        var noResultsMessage = \'<div class="no-results">\';
+        noResultsMessage += \'<i class="fa fa-exclamation-circle" aria-hidden="true"></i> \';
+        noResultsMessage += \'Nenhum resultado encontrado\';
+        noResultsMessage += \'</div>\';
+        document.getElementById("resultado-container").innerHTML = noResultsMessage;
+        </script>';
     }
     $conn->close();
 }
 ?>
-
-    
-</body>
-</html>

@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="NKPlaca1.css">
+    <link rel="stylesheet" type="text/css" href="NKPlaca2.css">
     <link rel="stylesheet" type="text/css" href="footer2.css">
     <script defer src="placa.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -175,7 +175,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         while($row = $result->fetch_assoc()) {
             echo '<script>
             var record = \'<div id="lembro-' . $row["id"] . '" class="record">\';
-            record += \'<div class="placa">Placa: ' . $row["placa"] . '<br></div>\';
+            record += \'<div class="placa"><strong> Placa:<strong/> ' . $row["placa"] . '<br></div>\';
             record += \'<div class="nome">Nome: ' . $row["nome_veiculo"] . '<br></div>\';
             record += \'<div class="ano_mod">Ano/Modelo: ' . $row["ano_modelo"] . '<br></div>\';
             record += \'<div class="marca">Marca: ' . $row["marca_modelo"] . '<br></div>\';
@@ -190,7 +190,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </script>';
         }
     } else {
-        echo "<script>document.getElementById('resultado-container').innerHTML = '0 resultados';</script>";
+        echo '<script>
+        var noResultsMessage = \'<div class="no-results">\';
+        noResultsMessage += \'<i class="fa fa-exclamation-circle" aria-hidden="true"></i> \';
+        noResultsMessage += \'Nenhum resultado encontrado\';
+        noResultsMessage += \'</div>\';
+        document.getElementById("resultado-container").innerHTML = noResultsMessage;
+        </script>';
     }
     $conn->close();
 }

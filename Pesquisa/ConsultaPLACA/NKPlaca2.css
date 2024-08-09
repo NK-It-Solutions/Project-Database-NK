@@ -160,7 +160,7 @@ header, .navbar {
     border-radius: 30px;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    height: 45vh;
+    height: 50vh;
     
 }
 
@@ -409,4 +409,20 @@ input {
         margin-right: 30px;
     }
     
+}
+
+.no-results {
+    color: #555;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.no-results i {
+    color: #ff6b6b;
+    margin-right: 8px;
 }
