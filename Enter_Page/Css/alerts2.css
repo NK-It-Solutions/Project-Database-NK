@@ -93,6 +93,11 @@
     margin-left: 1rem;
 }
 
+.card-container img {
+        border: 5px solid;
+        border-image: linear-gradient(45deg, red, yellow, green, blue) 1;
+}
+
 
 /* From Uiverse.io by vinodjangid07 */ 
 .loader {

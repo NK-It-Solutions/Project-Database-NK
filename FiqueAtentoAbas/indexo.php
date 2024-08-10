@@ -48,7 +48,7 @@
                             <br>de identificação de condutor infrator, acesse a página
                             <br>do serviço.</a>
                         <br>
-                        <br>Serviço online acesse: <a href="https://online8.detran.pe.gov.br/DetranPessoal/PortalServicos/LoginGov?servico_uri=https://online8.detran.pe.gov.br/DetranPessoal">DETRAN-PESSOAL.</a>
+                        <br>Serviço online acesse: <a href="https://online8.detran.pe.gov.br/DetranPessoal/PortalServicos/LoginGov?servico_uri=https://online8.detran.pe.gov.br/DetranPessoal">NK-PESSOAL.</a>
                         <br>
                         <br>Via postal: a solicitação de Identificação de Condutor
                         <br>Infrator pode ser feita por via postal, para o
@@ -69,7 +69,7 @@
                         <br>No caso de órgãos de trânsito municipais, como a
                         <br>CTTU (Recife), o cidadão pode efetuar a Identificação
                         <br>de Condutor Infrator no órgão autuador ou em uma
-                        <br>das unidades do DETRAN-PE.
+                        <br>das unidades da NK.
                     </p>
                     <br>
                     <div class="card">
@@ -162,7 +162,7 @@
                                 <br>de identificação de condutor infrator, acesse a página
                                 <br>do serviço.</a>
                             <br>
-                            <br>Serviço online acesse: <a href="https://online8.detran.pe.gov.br/DetranPessoal/PortalServicos/LoginGov?servico_uri=https://online8.detran.pe.gov.br/DetranPessoal">DETRAN-PESSOAL.</a>
+                            <br>Serviço online acesse: <a href="https://online8.detran.pe.gov.br/DetranPessoal/PortalServicos/LoginGov?servico_uri=https://online8.detran.pe.gov.br/DetranPessoal">NK-PESSOAL.</a>
                             <br>
                             <br>Via postal: a solicitação de Identificação de Condutor
                             <br>Infrator pode ser feita por via postal, para o
@@ -183,7 +183,7 @@
                             <br>No caso de órgãos de trânsito municipais, como a
                             <br>CTTU (Recife), o cidadão pode efetuar a Identificação
                             <br>de Condutor Infrator no órgão autuador ou em uma
-                            <br>das unidades do DETRAN-PE.
+                            <br>das unidades da NK.
                         </p>
                         <br>
                         <div class="card-mobile">

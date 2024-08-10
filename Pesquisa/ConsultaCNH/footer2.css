@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.background-footer {
+    border-top: 4px solid;
+    border-image: linear-gradient(45deg, red, yellow, green, blue) 1;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.logos-footer,
+.sobre-footer,
+.contatos-footer {
+    flex: 1 1 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logos-footer a,
+.sobre-footer a,
+.contatos-footer a {
+    color: #003cff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.logos-footer a:hover,
+.sobre-footer a:hover,
+.contatos-footer a:hover {
+    text-decoration: underline;
+}
+
+#Sobre-destaque,
+#Contatosfooter {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #003cff;
+}
+
+.logos-footer i {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.copyright {
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #003cff;
+}
+
+
+body.dark .background-footer {
+    background-color: rgb(15, 14, 14);
+}
+
+body.dark .logos-footer a{
+    color: orangered;
+}
+
+body.dark .sobre-footer a {
+    color: orangered;
+}
+
+body.dark .sobre-footer #Sobre-destaque {
+    color: rgb(255, 152, 114);
+}
+
+body.dark .contatos-footer a {
+    color: orangered;
+}
+
+body.dark .contatos-footer #Contatosfooter {
+    color: rgb(255, 152, 114);
+}
+
+body.dark .copyright {
+    color: rgb(255, 152, 114);
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .background-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logos-footer,
+    .sobre-footer,
+    .contatos-footer {
+        flex: 1 1 100%;
+        align-items: center;
+    }
+    .copyright {
+        margin-top: 10px;
+    }
+}

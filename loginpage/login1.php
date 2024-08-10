@@ -1,4 +1,47 @@
+<?php
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $cpf = $_POST['cpf'];
+    $senha = $_POST['password'];
+
+    // Conectar ao banco de dados
+    $conn = new mysqli('localhost', 'root', '', 'cadastro_carro');
+
+    // Verificar conexão
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Preparar e executar consulta SQL
+    $stmt = $conn->prepare("SELECT ContaID, senha FROM conta WHERE cpf = ?");
+    $stmt->bind_param("s", $cpf);
+    $stmt->execute();
+    $stmt->store_result();
+
+    // Verificar se o CPF existe
+    if ($stmt->num_rows > 0) {
+        $stmt->bind_result($id, $hashed_password);
+        $stmt->fetch();
+
+        // Verificar a senha
+        if (password_verify($senha, $hashed_password))  {
+            $_SESSION['user_id'] = $id;
+            header("Location:http://localhost/Project/Project-Database-NK/Pesquisa/ConsultaCNH/consulta.php");
+            exit;
+        } else {
+            echo'<div style="padding: 10px; background-color: #f2dede; color: #a94442; border: 1px solid #ebccd1; border-radius: 5px; font-family: Arial, sans-serif;">
+                    Senha <strong>incorreta</strong> .
+                 </div>';
+        }
+    } else {
+        echo'<div style="padding: 10px; background-color: #f2dede; color: #a94442; border: 1px solid #ebccd1; border-radius: 5px; font-family: Arial, sans-serif;">
+                CPF <strong>incorreto</strong> .
+             </div>';
+    }
+    $stmt->close();
+    $conn->close();
+}
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -71,47 +114,4 @@
     
 </body>
 </html>
-<?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $cpf = $_POST['cpf'];
-    $senha = $_POST['password'];
-
-    // Conectar ao banco de dados
-    $conn = new mysqli('localhost', 'root', '', 'cadastro_carro');
-
-    // Verificar conexão
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    // Preparar e executar consulta SQL
-    $stmt = $conn->prepare("SELECT ContaID, senha FROM conta WHERE cpf = ?");
-    $stmt->bind_param("s", $cpf);
-    $stmt->execute();
-    $stmt->store_result();
-
-    // Verificar se o CPF existe
-    if ($stmt->num_rows > 0) {
-        $stmt->bind_result($id, $hashed_password);
-        $stmt->fetch();
-
-        // Verificar a senha
-        if (password_verify($senha, $hashed_password))  {
-            $_SESSION['user_id'] = $id;
-            header("Location:http://localhost/Project/Project-Database-NK/Pesquisa/ConsultaCNH/consulta.php");
-            exit;
-        } else {
-            echo'<div style="padding: 10px; background-color: #f2dede; color: #a94442; border: 1px solid #ebccd1; border-radius: 5px; font-family: Arial, sans-serif;">
-                    Senha <strong>incorreta</strong> .
-                 </div>';
-        }
-    } else {
-        echo'<div style="padding: 10px; background-color: #f2dede; color: #a94442; border: 1px solid #ebccd1; border-radius: 5px; font-family: Arial, sans-serif;">
-                CPF <strong>incorreto</strong> .
-             </div>';
-    }
-    $stmt->close();
-    $conn->close();
-}
-?>
